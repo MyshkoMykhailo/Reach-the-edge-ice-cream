@@ -1,3 +1,29 @@
 .header {
-  color: violet;
+  // color: violet;
+  background-color: #ffb8ca;
+  border: solid 1px tomato;
+}
+.header__logo {
+  display: inline-block;
+  width: 199px;
+}
+.header__title {
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  // @include font(400px, 26px, 1.15, 00.04em);
+}
+
+.header__button-priority {
+  display: inline-block;
+  cursor: progress;
+  font-family: inherit;
+  align-items: center;
+  text-align: center;
+  background-color: #d41443;
+  border-radius: 20px;
 }
