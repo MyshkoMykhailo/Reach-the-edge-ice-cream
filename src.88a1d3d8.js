@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/Reach-the-edge-ice-cream/src.890adb7c.js.map
+//# sourceMappingURL=/Reach-the-edge-ice-cream/src.88a1d3d8.js.map
