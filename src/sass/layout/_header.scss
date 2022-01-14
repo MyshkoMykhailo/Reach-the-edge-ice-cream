@@ -1,20 +1,15 @@
 .header {
-  // color: violet;
-  background-color: #ffb8ca;
+  background-color: var(--hero-background-color);
   border: solid 1px tomato;
 }
 .header__logo {
-  display: inline-block;
+  display: flex;
   width: 199px;
+  background-color: var(--hero-text-color);
 }
 .header__title {
-  font-weight: normal;
-  font-size: 26px;
-  line-height: 30px;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-
-  color: #ffffff;
+  display: block;
+  color: var(--hero-text-color);
   // @include font(400px, 26px, 1.15, 00.04em);
 }
 
@@ -24,6 +19,20 @@
   font-family: inherit;
   align-items: center;
   text-align: center;
-  background-color: #d41443;
+  background-color: var(--second-hero-color);
   border-radius: 20px;
+  border: 0;
+  color: var(---hero-text-color);
+}
+
+.header__button-secondary {
+  display: inline-block;
+  cursor: progress;
+  font-family: inherit;
+  align-items: center;
+  text-align: center;
+  background-color: var(--hero-text-color);
+  border-radius: 20px;
+  border: 0;
+  color: var(--second-hero-color);
 }
