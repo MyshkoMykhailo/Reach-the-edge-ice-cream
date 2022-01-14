@@ -2,31 +2,35 @@ $background-color: #fff5f6;
 $main-text-color: #000000;
 $second-text-color: #d41443;
 
-@mixin font($fw: 400, $fs: 12px, $lh: 1.7, $ls: 0.04em) {
-  font-weight: $fw;
-  font-size: $fs;
-  line-height: $lh;
-  letter-spacing: $ls;
-}
-
-body {
-  font-family: DM Sans, sans-serif;
+.advantages {
   background-color: $background-color;
-  color: $main-text-color;
+  padding-top: 0;
+  padding-bottom: 145px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 246px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 310px;
+  }
 }
 
 .advantages__list-grid {
   margin-top: 0;
-  margin-bottom: 97px;
+  // margin-bottom: 97px;
 
   @media screen and (min-width: 768px) {
-    margin-bottom: 140px;
+    // margin-bottom: 140px;
   }
 }
 
 .grid-list {
+  margin-bottom: -38px;
+
   @media screen and (min-width: 768px) {
     display: flex;
+    margin-bottom: 0;
     margin-right: -60px;
   }
 
@@ -38,35 +42,35 @@ body {
 .grid-list__item {
   display: block;
   margin-bottom: 38px;
-  width: 230px;
+  max-width: 230px;
 
   @media screen and (min-width: 768px) {
-    width: 180px;
+    max-width: 180px;
     margin-right: 60px;
     margin-bottom: 0;
   }
 
   @media screen and (min-width: 1280px) {
-    width: calc((100% - 3 * 30px) / 3);
+    max-width: calc((100% - 3 * 30px) / 3);
     margin-right: 30px;
   }
 }
 
-.grid-list__title {
+%grid-list__title {
   font-family: Titan One, sans-serif;
-  @include font($fs: 36px, $lh: 1.14);
+  @include font($fw: 400, $fs: 36px, $lh: 1.14);
   text-transform: uppercase;
   color: $second-text-color;
   margin-bottom: 18px;
 
   @media screen and (min-width: 768px) {
-    @include font($fs: 48px, $lh: 1.15);
+    @include font($fw: 400, $fs: 48px, $lh: 1.15);
     text-transform: none;
     margin-bottom: 13px;
   }
 
   @media screen and (min-width: 1280px) {
-    @include font($fs: 58px, $lh: 1.14);
+    @include font($fw: 400, $fs: 58px, $lh: 1.14);
     text-transform: none;
     margin-bottom: 15px;
   }
@@ -81,7 +85,6 @@ body {
     @media screen and (min-width: 768px) {
       margin-bottom: 36px;
     }
-
     @media screen and (min-width: 1280px) {
       margin-bottom: 40px;
     }
@@ -89,40 +92,94 @@ body {
 }
 
 .grid-list__title--01 {
-  @extend .grid-list__title;
+  @extend %grid-list__title;
   &::before {
     width: 33px;
     height: 50px;
-    // background-image: url(../images/icon1.png);
+    background-image: url(../images/mob/icon1-mob.png);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/mob/icon1-mob-2x.png);
+    }
+
+    @media screen and (min-width: 768px) {
+      background-image: url(../images/tab/icon1-tab.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 196dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/tab/icon1-tab-2x.png);
+      }
+    }
+
+    @media screen and (min-width: 1280px) {
+      background-image: url(../images/pc/icon1-pc.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 196dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/pc/icon1-pc-2x.png);
+      }
+    }
   }
 }
 
 .grid-list__title--02 {
-  @extend .grid-list__title;
+  @extend %grid-list__title;
   &::before {
     width: 50px;
     height: 50px;
-    // background-image: url(../images/icon2.png);
+    background-image: url(../images/mob/icon2-mob.png);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/mob/icon2-mob-2x.png);
+    }
+
+    @media screen and (min-width: 768px) {
+      background-image: url(../images/tab/icon2-tab.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 196dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/tab/icon2-tab-2x.png);
+      }
+    }
+
+    @media screen and (min-width: 1280px) {
+      background-image: url(../images/pc/icon2-pc.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 196dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/pc/icon2-pc-2x.png);
+      }
+    }
   }
 }
 
 .grid-list__title--03 {
-  @extend .grid-list__title;
+  @extend %grid-list__title;
   &::before {
     width: 44px;
     height: 50px;
-    // background-image: url(../images/icon3.png);
+    background-image: url(../images/mob/icon3-mob.png);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/mob/icon3-mob-2x.png);
+    }
+
+    @media screen and (min-width: 768px) {
+      background-image: url(../images/tab/icon3-tab.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 196dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/tab/icon3-tab-2x.png);
+      }
+    }
+
+    @media screen and (min-width: 1280px) {
+      background-image: url(../images/pc/icon3-pc.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 196dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/pc/icon3-pc-2x.png);
+      }
+    }
   }
 }
 
 .grid-list__text {
-  @include font($fw: 700);
+  @include font($fs: 12px, $lh: 1.7);
 
   @media screen and (min-width: 768px) {
-    @include font($fw: 700, $fs: 14px, $lh: 1.74);
+    @include font($lh: 1.74);
   }
 
   @media screen and (min-width: 1280px) {
-    @include font($fw: 700, $fs: 16px, $lh: 1.76, $ls: 0.02em);
+    @include font($fs: 16px, $lh: 1.76, $ls: 0.02em);
   }
 }
