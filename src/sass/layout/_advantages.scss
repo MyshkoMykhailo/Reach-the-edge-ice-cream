@@ -1,3 +1,128 @@
-.advantages {
-  color: orange;
+$background-color: #fff5f6;
+$main-text-color: #000000;
+$second-text-color: #d41443;
+
+@mixin font($fw: 400, $fs: 12px, $lh: 1.7, $ls: 0.04em) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
+
+body {
+  font-family: DM Sans, sans-serif;
+  background-color: $background-color;
+  color: $main-text-color;
+}
+
+.advantages__list-grid {
+  margin-top: 0;
+  margin-bottom: 97px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 140px;
+  }
+}
+
+.grid-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-right: -60px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-right: -30px;
+  }
+}
+
+.grid-list__item {
+  display: block;
+  margin-bottom: 38px;
+  width: 230px;
+
+  @media screen and (min-width: 768px) {
+    width: 180px;
+    margin-right: 60px;
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: calc((100% - 3 * 30px) / 3);
+    margin-right: 30px;
+  }
+}
+
+.grid-list__title {
+  font-family: Titan One, sans-serif;
+  @include font($fs: 36px, $lh: 1.14);
+  text-transform: uppercase;
+  color: $second-text-color;
+  margin-bottom: 18px;
+
+  @media screen and (min-width: 768px) {
+    @include font($fs: 48px, $lh: 1.15);
+    text-transform: none;
+    margin-bottom: 13px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    @include font($fs: 58px, $lh: 1.14);
+    text-transform: none;
+    margin-bottom: 15px;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 16px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 36px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.grid-list__title--01 {
+  @extend .grid-list__title;
+  &::before {
+    width: 33px;
+    height: 50px;
+    // background-image: url(../images/icon1.png);
+  }
+}
+
+.grid-list__title--02 {
+  @extend .grid-list__title;
+  &::before {
+    width: 50px;
+    height: 50px;
+    // background-image: url(../images/icon2.png);
+  }
+}
+
+.grid-list__title--03 {
+  @extend .grid-list__title;
+  &::before {
+    width: 44px;
+    height: 50px;
+    // background-image: url(../images/icon3.png);
+  }
+}
+
+.grid-list__text {
+  @include font($fw: 700);
+
+  @media screen and (min-width: 768px) {
+    @include font($fw: 700, $fs: 14px, $lh: 1.74);
+  }
+
+  @media screen and (min-width: 1280px) {
+    @include font($fw: 700, $fs: 16px, $lh: 1.76, $ls: 0.02em);
+  }
 }
