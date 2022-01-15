@@ -1,10 +1,12 @@
 <section class="hero">
   <div class="container">
     <h2 class="hero__title">
-      ice cream made with <span class="header__title--secondary">passion</span>
+      ice cream made with <span class="hero__title--secondary">passion</span>
     </h2>
-    <button class="hero__button-priority" type="button">Products</button>
-    <button class="hero__button-secondary" type="button">How it’s made?</button>
+    <div class="thumb-btn">
+      <button class="hero__button-priority" type="button">Products</button>
+      <button class="hero__button-secondary" type="button">How it’s made?</button>
+    </div>
     <picture class="picture">
       <source
         srcset="./images/pc/heder-ice-cream.png 1x, ./images/pc/heder-ice-cream-2x.png 2x"
@@ -23,5 +25,10 @@
       />
       <img src="./images/tab/heder-ice-cream-tab.png" alt="IceCream" />
     </picture>
+    <button type="button" class="round-button button-more">
+      <svg width="12" , height="12">
+        <use href="./images/icons.svg#icon-arrow"></use>
+      </svg>
+    </button>
   </div>
 </section>

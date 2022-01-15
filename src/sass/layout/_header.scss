@@ -21,7 +21,7 @@
 }
 
 .menu-toggle {
-  color: black;
+  // color: black;
   border: 0;
   padding: 0;
   background-color: var(--hero-background-color);
@@ -31,7 +31,9 @@
 }
 .js-close-menu {
   background-color: var(--header-menu-burger-color);
-  filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
+  position: absolute;
+  top: 23px;
+  right: 28px;
 }
 .mobile-menu {
   border-top: 1px solid #e18298;
@@ -87,8 +89,12 @@
 
   position: fixed;
   top: 0;
+
+  @media screen and (max-width: 768px) {
+    width: 100vw;
+  }
   left: 0;
-  width: 100vw;
+  width: 254px;
   height: 100vh;
   z-index: 999;
   transform: translateX(100%);
@@ -97,13 +103,66 @@
   display: flex;
   flex-direction: column;
   // justify-content: space-between;
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
 }
 .menu-container.is-open {
   transform: translateX(0);
-  background-color: transparent;
-  filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0));
 }
 // .menu-container {
 // }
 // .mobile-menu__icon {
 // }
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  width: 160px;
+  height: 44px;
+  // margin: 0 auto;
+  padding: 0;
+  border: none;
+  border-radius: 22px;
+  background-color: var(--header-button-background-color);
+  color: var(--header-button-text-color);
+
+  @include font($fs: 16px, $lh: 1.31, $ls: 0em);
+}
+
+// Кнопка BuyNow для HEADER
+.header__btn {
+  &:hover,
+  &:focus {
+    background-color: var(--header-button-bg-hover-color);
+  }
+
+  &-arrow {
+    margin-left: 12px;
+  }
+}
+
+// Кнопка BuyNow для Бургера
+.header-burger__btn {
+  width: 209px;
+
+  @media screen and (min-width: 768px) {
+    width: 186px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: var(--header-button-bg-hover-color);
+  }
+
+  &-arrow {
+    margin-left: 27px;
+
+    @media screen and (min-width: 768px) {
+      margin-left: 20px;
+    }
+  }
+}
