@@ -1,3 +1,40 @@
 .hero {
-  color: tomato;
+  .header__title {
+    width: 218px;
+    display: block;
+    color: var(--hero-text-color);
+    @include font(400px, 26px, 1.15, 00.04em);
+    font-family: Titan One;
+    text-transform: uppercase;
+
+    color: #ffffff;
+  }
+  .header__title--secondary {
+    font-size: 48px;
+    line-height: 1.46;
+    color: var(--second-hero-color);
+  }
+  .header__button-priority {
+    display: inline-block;
+    cursor: progress;
+    font-family: inherit;
+    align-items: center;
+    text-align: center;
+    background-color: var(--second-hero-color);
+    border-radius: 20px;
+    border: 0;
+    color: var(---hero-text-color);
+  }
+
+  .header__button-secondary {
+    display: inline-block;
+    cursor: progress;
+    font-family: inherit;
+    align-items: center;
+    text-align: center;
+    background-color: var(--hero-text-color);
+    border-radius: 20px;
+    border: 0;
+    color: var(--second-hero-color);
+  }
 }
