@@ -6,10 +6,10 @@
     padding-top: 37px;
   }
 }
-.header-thumb {
+.thumb-header-menu {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  // align-items: center;
 }
 
 .header__logo {
@@ -142,6 +142,9 @@
 
   &-arrow {
     margin-left: 12px;
+  }
+  @media screen and (max-width: 767px) {
+    display: none;
   }
 }
 

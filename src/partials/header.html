@@ -25,25 +25,35 @@
         <use href="./images/icons.svg#icon-burger"></use>
       </svg>
     </button>
-    <nav class="navigation">
-      <ul class="navigation-list list">
-        <li class="navigation__item">
-          <a class="navigation__link navigation__link--aktive link" href="./index.html">Home</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link link" href="#">About us</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link link" href="#">How it’s made?</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link link" href="#">Our products</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link link" href="#">Contact</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="thumb-header-menu">
+      <nav class="navigation">
+        <ul class="navigation-list list">
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link--aktive link" href="./index.html">Home</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link link" href="#">About us</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link link" href="#">How it’s made?</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link link" href="#">Our products</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link link" href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Кнопка BuyNow для HEADER -->
+      <button type="button" class="btn header__btn">
+        Buy now<span class="header__btn-arrow">
+          <svg class="svg" width="8" height="8">
+            <use href="./images/icons.svg#icon-vector-pink"></use>
+          </svg>
+        </span>
+      </button>
+    </div>
   </div>
   <div class="menu-container js-menu-container" id="mobile-menu">
     <button class="menu-toggle js-close-menu">
@@ -51,14 +61,15 @@
         <use href="./images/icons.svg#icon-close"></use>
       </svg>
     </button>
-    <!-- Кнопка BuyNow для HEADER -->
-    <button type="button" class="btn header__btn">
-      Buy now<span class="header__btn-arrow">
+    <!-- Кнопка BuyNow для Бургера -->
+    <button type="button" class="btn header-burger__btn">
+      Buy now<span class="header-burger__btn-arrow">
         <svg class="svg" width="8" height="8">
           <use href="./images/icons.svg#icon-vector-pink"></use>
         </svg>
       </span>
     </button>
+
     <ul class="mobile-menu">
       <li class="mobile-menu__item">
         <a href="./index.html" class="mobile-menu__link mobile-menu__link--aktive link">Home</a>
