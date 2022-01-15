@@ -1,3 +1,31 @@
 .products {
-  color: plum;
+  padding-top: 121px;
+  padding-bottom: 98px;
+  outline: 1px dashed green;
+  @media screen and (min-width: 1280px) {
+    padding-top: ;
+  }
+}
+
+.products__label {
+  font-family: 'Titan One', sans-serif;
+  @include font(normal, 18px, 1.17);
+  color: var(--section-label-text-color);
+  text-align: center;
+  margin-bottom: 15px;
+  @media screen and (min-width: 768px) {
+    @include font(normal, 26px, 1.15);
+  }
+}
+
+.products__header {
+  font-family: 'Titan One', sans-serif;
+  @include font(normal, 34px, 1.15);
+  color: var(--section-head-text-color);
+  text-align: center;
+  margin-bottom: 31px;
+  @media screen and (min-width: 768px) {
+    @include font(normal, 48px);
+    margin-bottom: 39px;
+  }
 }
