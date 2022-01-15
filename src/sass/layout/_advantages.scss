@@ -1,31 +1,21 @@
-$background-color: #fff5f6;
-$main-text-color: #000000;
-$second-text-color: #d41443;
-
 .advantages {
-  background-color: $background-color;
+  background-color: var(--section-background-coloured-color);
   padding-top: 0;
-  padding-bottom: 145px;
+  padding-bottom: 97px;
 
   @media screen and (min-width: 768px) {
-    padding-bottom: 246px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    padding-bottom: 310px;
+    padding-bottom: 140px;
   }
 }
 
-.advantages__list-grid {
+.advantages__list-benefits {
   margin-top: 0;
-  // margin-bottom: 97px;
 
   @media screen and (min-width: 768px) {
-    // margin-bottom: 140px;
   }
 }
 
-.grid-list {
+.benefits-list {
   margin-bottom: -38px;
 
   @media screen and (min-width: 768px) {
@@ -39,7 +29,7 @@ $second-text-color: #d41443;
   }
 }
 
-.grid-list__item {
+.benefits-list__item {
   display: block;
   margin-bottom: 38px;
   max-width: 230px;
@@ -56,11 +46,11 @@ $second-text-color: #d41443;
   }
 }
 
-%grid-list__title {
+%benefits-list__title {
   font-family: Titan One, sans-serif;
   @include font($fw: 400, $fs: 36px, $lh: 1.14);
   text-transform: uppercase;
-  color: $second-text-color;
+  color: var(--section-head-text-color);
   margin-bottom: 18px;
 
   @media screen and (min-width: 768px) {
@@ -91,8 +81,8 @@ $second-text-color: #d41443;
   }
 }
 
-.grid-list__title--01 {
-  @extend %grid-list__title;
+.benefits-list__title--01 {
+  @extend %benefits-list__title;
   &::before {
     width: 33px;
     height: 50px;
@@ -118,8 +108,8 @@ $second-text-color: #d41443;
   }
 }
 
-.grid-list__title--02 {
-  @extend %grid-list__title;
+.benefits-list__title--02 {
+  @extend %benefits-list__title;
   &::before {
     width: 50px;
     height: 50px;
@@ -145,8 +135,8 @@ $second-text-color: #d41443;
   }
 }
 
-.grid-list__title--03 {
-  @extend %grid-list__title;
+.benefits-list__title--03 {
+  @extend %benefits-list__title;
   &::before {
     width: 44px;
     height: 50px;
@@ -172,7 +162,7 @@ $second-text-color: #d41443;
   }
 }
 
-.grid-list__text {
+.benefits-list__text {
   @include font($fs: 12px, $lh: 1.7);
 
   @media screen and (min-width: 768px) {
