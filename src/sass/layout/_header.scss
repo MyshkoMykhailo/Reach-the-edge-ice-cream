@@ -2,18 +2,29 @@
   background-color: var(--hero-background-color);
   border: solid 1px tomato;
   padding-top: 6px;
+  @media screen and (min-width: 768px) {
+    padding-top: 37px;
+  }
 }
+.header-thumb {
+  display: flex;
+  justify-content: space-between;
+}
+
 .header__logo {
   display: flex;
-  // width: 199px;
-  // background-color: var(--hero-text-color);
 }
+
 .mobile-menu__icon {
   fill: currentColor;
 }
+
 .menu-toggle {
   color: black;
-  @media screen and (min-width: 768px) {
+  border: 0;
+  padding: 0;
+  background-color: var(--hero-background-color);
+  @media screen and (min-width: 1280px) {
     display: none;
   }
 }
