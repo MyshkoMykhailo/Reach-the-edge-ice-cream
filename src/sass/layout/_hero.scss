@@ -1,5 +1,6 @@
 .hero {
   border: solid 1px green;
+  background-color: var(--hero-background-color);
 }
 .hero__title {
   width: 218px;
@@ -8,7 +9,6 @@
   @include font(400px, 26px, 1.15, 00.04em);
   font-family: Titan One;
   text-transform: uppercase;
-  color: #ffffff;
 }
 .hero__title--secondary {
   font-size: 48px;
