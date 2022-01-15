@@ -3,29 +3,104 @@
   padding-bottom: 98px;
   outline: 1px dashed green;
   @media screen and (min-width: 1280px) {
-    padding-top: ;
+    padding-top: 127px;
   }
 }
 
 .products__label {
   font-family: 'Titan One', sans-serif;
-  @include font(normal, 18px, 1.17);
+  @include font(400, 18px, 1.17);
   color: var(--section-label-text-color);
+  text-transform: uppercase;
   text-align: center;
   margin-bottom: 15px;
   @media screen and (min-width: 768px) {
     @include font(normal, 26px, 1.15);
   }
+  @media screen and (min-width: 1280px) {
+    @include font(normal, 30px, 1.13);
+  }
 }
 
 .products__header {
   font-family: 'Titan One', sans-serif;
-  @include font(normal, 34px, 1.15);
+  @include font(400, 34px, 1.15);
   color: var(--section-head-text-color);
+  text-transform: uppercase;
   text-align: center;
   margin-bottom: 31px;
   @media screen and (min-width: 768px) {
-    @include font(normal, 48px);
+    @include font(400, 48px);
     margin-bottom: 39px;
   }
+  @media screen and (min-width: 1280px) {
+    @include font(400, 58px, 1.14);
+    margin-bottom: 49px;
+  }
+}
+.products-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: -30px;
+}
+
+.products-list__card {
+  flex-basis: calc((100% - (1 - 1) * 30px) / 1);
+  margin-bottom: 30px;
+}
+
+.products-list__card-coloured {
+  padding-top: 161px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 41px;
+  border-radius: 24px;
+}
+
+.products-list__card-coloured--first {
+  background-color: var(--first-product-background-color);
+}
+
+.products-list__card-coloured--second {
+  background-color: var(--second-product-background-color);
+}
+
+.products-list__card-coloured--third {
+  background-color: var(--third-product-background-color);
+}
+
+.product-list__name {
+  font-family: 'Titan One', sans-serif;
+  @include font(400, 20px, 1.15);
+  color: var(--section-background-coloured-color);
+  text-transform: uppercase;
+  margin-bottom: 31px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: 1280px) {
+    @include font(400, 30px, 1.13);
+    margin-bottom: 32px;
+  }
+}
+
+.product-list__name::after {
+  content: '';
+  margin-top: 30px;
+  display: flex;
+  width: 26px;
+  height: 6px;
+  background: url(../images/dots.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  @media screen and (min-width: 1280px) {
+    margin-top: 32px;
+  }
+}
+
+.product-list__text {
+  @include font(700, 16px, 1.76);
+  color: --section-text-on-dark-bg-color;
 }
