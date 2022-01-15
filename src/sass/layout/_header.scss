@@ -1,11 +1,12 @@
 .header {
   background-color: var(--hero-background-color);
   border: solid 1px tomato;
+  padding-top: 6px;
 }
 .header__logo {
   display: flex;
-  width: 199px;
-  background-color: var(--hero-text-color);
+  // width: 199px;
+  // background-color: var(--hero-text-color);
 }
 .header__title {
   display: block;

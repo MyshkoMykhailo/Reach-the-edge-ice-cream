@@ -1,10 +1,25 @@
 <section class="header">
   <div class="container">
-    <a class="header__logo link" href="./index.html">
-      <img class="header-img__logo" src="./images/demo.jpg" alt="Logo" />
+    <a class="header__logo" href="./index.html">
+      <picture>
+        <source
+          href="./images/pc/heder-logo.png 1x, ./images/pc/heder-logo-2x.png 2x"
+          media="(min-width: 1280px)"
+        />
+        <source
+          href="./images/tab/heder-logo-tab.png 1x, ./images/tab/heder-logo-tab-2x.png 2x"
+          media="(min-width: 768px)"
+        />
+        <source
+          href="./images/mob/heder-logo-mob.png 1x, ./images/mob/heder-logo-mob-2x.png 2x"
+          media="(min-width: 480px)"
+        />
+        <img class="header-img__logo" src="./images/mob/heder-logo-mob.png" alt="Logo" />
+      </picture>
     </a>
     <h2 class="header__title">ice cream made with <span>passion</span></h2>
     <button class="header__button-priority" type="button">Products</button>
     <button class="header__button-secondary" type="button">How it’s made?</button>
+    <div class="hero"></div>
   </div>
 </section>
