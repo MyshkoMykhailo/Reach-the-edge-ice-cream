@@ -101,6 +101,8 @@
 }
 
 .product-list__text {
-  @include font(700, 16px, 1.76);
-  color: --section-text-on-dark-bg-color;
+  @include font(700, 14px, 1.52);
+  color: var(--section-text-on-dark-bg-color);
+  text-align: center;
+  margin-bottom: 30px;
 }
