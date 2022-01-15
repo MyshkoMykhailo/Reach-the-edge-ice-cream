@@ -1,3 +1,164 @@
 .about {
-  color: red;
+  background-color: var(--section-background-coloured-color);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 125px;
+  padding-bottom: 40px;
+  @media screen and (max-width: 767px) {
+    background-image: url(../images/mob/about-milk-mob.png);
+    background-position: right 0 bottom 100px;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/mob/about-milk-mob-2x.png);
+    }
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 130px;
+    padding-bottom: 65px;
+  }
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/pc/about-milk.png);
+    background-position: 0 340px;
+    padding-top: 125px;
+    padding-bottom: 40px;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/pc/about-milk-2x.png);
+    }
+  }
+}
+
+.about__title-wrap {
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 25px;
+  @media screen and (min-width: 768px) {
+    width: 430px;
+    margin-bottom: 50px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 540px;
+    margin-bottom: 55px;
+  }
+}
+
+.about__pre-title {
+  @include font(400, 18px, 1.16, 0);
+  font-family: 'Titan One', sans-serif;
+  text-transform: uppercase;
+  color: #ffa5ba;
+  margin-bottom: 15px;
+  @media screen and (min-width: 768px) {
+    @include font(400, 26px, 1.15, 0);
+  }
+  @media screen and (min-width: 1280px) {
+    @include font(400, 30px, 1.13, 0.04em);
+  }
+}
+
+.about__title {
+  @include font(400, 34px, 1.15, 0.04em);
+  font-family: 'Titan One', sans-serif;
+  text-transform: uppercase;
+  color: #d41443;
+  @media screen and (min-width: 768px) {
+    @include font(400, 48px, 1.15, 0);
+  }
+  @media screen and (min-width: 1280px) {
+    @include font(400, 58px, 1.14, 0.06em);
+  }
+}
+
+.about__content-wrap {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.about__picture {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 45px;
+  }
+}
+
+.about__img {
+  margin: 0 auto;
+}
+
+.about__wrap {
+  width: 220px;
+  margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    width: 340px;
+    margin: 0;
+    padding-top: 50px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 465px;
+  }
+}
+
+.about__text-wrap {
+  margin-bottom: 15px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 45px;
+  }
+}
+
+// .about__text {
+//   @include font(500, 12px, 1.62, 0);
+// }
+
+.about__text--dark {
+  color: #000000;
+  margin-bottom: 30px;
+  @include font(500, 12px, 1.62, 0);
+  @media screen and (min-width: 768px) {
+    @include font(500, 14px, 1.76, 0);
+  }
+  @media screen and (min-width: 1280px) {
+    @include font(500, 16px, 1.76, 0.04em);
+  }
+}
+
+.about__text--grey {
+  @include font(500, 12px, 1.62, 0);
+  color: #907e82;
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    @include font(500, 14px, 1.76, 0.04);
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    @include font(500, 14px, 1.94, 0.04);
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.about__button {
+  @extend %button;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 22px;
+  padding: 10px 35px;
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
+
+  .about__icon {
+    width: 8px;
+    height: 8px;
+    margin-left: 8px;
+  }
 }
