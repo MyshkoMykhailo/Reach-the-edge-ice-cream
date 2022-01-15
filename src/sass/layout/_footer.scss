@@ -1,3 +1,69 @@
-.footer {
-  color: blue;
+.footer-nav {
+  text-align: center;
+}
+.footer-product {
+  margin-bottom: 43px;
+}
+.footer-product__list {
+  text-align: left;
+}
+.footer-product__text1 {
+  margin-bottom: 17px;
+  font-family: Titan One;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+
+  color: #ffa5ba;
+}
+.footer-product__text2 {
+  font-family: Titan One;
+  font-size: 34px;
+  line-height: 39px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #d41443;
+}
+.footer-social {
+  margin-bottom: 46px;
+}
+.footer-social__list {
+  display: flex;
+  justify-content: right;
+}
+.footer-social__item {
+  list-style-type: none;
+  & + & {
+    margin-left: 28.24px;
+  }
+}
+
+.footer-contact {
+  margin-bottom: 43px;
+  text-align: right;
+  &__text {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 186%;
+    text-align: right;
+
+    color: #000000;
+  }
+  &__tel {
+    color: #d41443;
+  }
+}
+.footer-сopyright {
+  padding-top: 22px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 152%;
+  text-align: center;
+
+  color: #907e82;
 }
