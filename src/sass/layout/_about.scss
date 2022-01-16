@@ -46,7 +46,7 @@
   @include font(400, 18px, 1.16, 0);
   font-family: 'Titan One', sans-serif;
   text-transform: uppercase;
-  color: #ffa5ba;
+  color: var(--section-label-text-color);
   margin-bottom: 15px;
   @media screen and (min-width: 768px) {
     @include font(400, 26px, 1.15, 0);
@@ -60,7 +60,7 @@
   @include font(400, 34px, 1.15, 0.04em);
   font-family: 'Titan One', sans-serif;
   text-transform: uppercase;
-  color: #d41443;
+  color: var(--section-head-text-color);
   @media screen and (min-width: 768px) {
     @include font(400, 48px, 1.15, 0);
   }
@@ -95,7 +95,7 @@
     padding-top: 50px;
   }
   @media screen and (min-width: 1280px) {
-    width: 465px;
+    width: 463px;
   }
 }
 
@@ -109,14 +109,10 @@
   }
 }
 
-// .about__text {
-//   @include font(500, 12px, 1.62, 0);
-// }
-
 .about__text--dark {
-  color: #000000;
-  margin-bottom: 30px;
   @include font(500, 12px, 1.62, 0);
+  color: var(--section-text-main-color);
+  margin-bottom: 30px;
   @media screen and (min-width: 768px) {
     @include font(500, 14px, 1.76, 0);
   }
@@ -127,18 +123,18 @@
 
 .about__text--grey {
   @include font(500, 12px, 1.62, 0);
-  color: #907e82;
+  color: var(--section-text-second-color);
   &:not(:last-child) {
     margin-bottom: 30px;
   }
   @media screen and (min-width: 768px) {
-    @include font(500, 14px, 1.76, 0.04);
+    @include font(500, 14px, 1.76, 0.04em);
     &:not(:last-child) {
       margin-bottom: 15px;
     }
   }
   @media screen and (min-width: 1280px) {
-    @include font(500, 14px, 1.94, 0.04);
+    @include font(500, 14px, 1.94, 0.04em);
     &:not(:last-child) {
       margin-bottom: 30px;
     }
