@@ -1,3 +1,292 @@
 .contacts {
-  color: yellow;
+  padding-bottom: 113px;
+  background-color: var(--section-background-coloured-color);
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 158px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 165px;
+    background-color: var(--section-background-coloured-color);
+    background-image: url('../images/pc/footer-picture.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background: url('../images/pc/footer-picture-2x.png');
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__list {
+    margin-top: -84px;
+    margin-bottom: 54px;
+    @include flex();
+    flex-direction: column;
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      margin-bottom: 81px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 86px;
+    }
+  }
+  &__item {
+    background-color: #fff;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+  }
+}
+.category {
+  height: 427px;
+  padding-top: 43px;
+  padding-bottom: 43px;
+  padding-left: 20px;
+  padding-right: 21px;
+  margin-left: auto;
+  margin-right: auto;
+
+  // &:not(:last-child) {
+  //   margin-bottom: 20px;
+  // }
+
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+    // margin-right: 50px;
+    // margin-left: 50px;
+  }
+  @media screen and (min-width: 768px) {
+    margin: 0;
+    min-width: 220px;
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+    height: 544px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 31px;
+    padding-right: 32px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 330px;
+    height: 572px;
+    padding-top: 51px;
+    padding-bottom: 62px;
+    padding-left: 43px;
+    padding-right: 44px;
+  }
+
+  &__name {
+    width: 80px;
+    height: 16px;
+    background: var(--first-contact-background-color);
+    color: var(--section-text-on-dark-bg-color);
+    border-radius: 4px;
+    @include flex();
+    text-align: center;
+    @include font(500, 12px, 1.83, 0.04em);
+    @media screen and (min-width: 768px) {
+      width: 73px;
+      height: 28px;
+      @include font(500, 16px, 1.88, 0.04em);
+      border-radius: 6px;
+    }
+  }
+  &__name-another {
+    width: 130px;
+    height: 16px;
+    background: var(--second-contact-background-color);
+    color: var(--section-text-on-dark-bg-color);
+    border-radius: 4px;
+    @include flex();
+    text-align: center;
+    @include font(500, 12px, 1.83, 0.04em);
+    @media screen and (min-width: 768px) {
+      width: 138px;
+      height: 28px;
+      @include font(500, 16px, 1.88, 0.04em);
+      border-radius: 6px;
+    }
+  }
+  &__link {
+    @include font(500, 12px, 1.5, 0.04em);
+    color: #907e82;
+    @media screen and (min-width: 768px) {
+      @include font(500, 14px, 1.86, 0em);
+    }
+    @media screen and (min-width: 1280px) {
+      @include font(500, 16px, 1.81, 0em);
+    }
+  }
+}
+
+.about-category {
+  &__item {
+    display: flex;
+    flex-direction: column;
+    @include font(500, 12px, 1.83, 0.04em);
+    color: var(--section-text-main-color);
+    &:not(:last-child) {
+      border-bottom: 1px solid #e1e1e1;
+    }
+    margin-top: 25px;
+    @media screen and (min-width: 768px) {
+      @include font(500, 16px, 1.83, 0.04em);
+      margin-top: 30px;
+    }
+    @media screen and (min-width: 1280px) {
+      @include font(500, 16px, 1.88, 0.04em);
+    }
+  }
+  &__text {
+    @include font(500, 12px, 1.5, 0em);
+    color: var(--section-text-second-color);
+    margin-top: 10px;
+    margin-bottom: 25px;
+    @media screen and (min-width: 768px) {
+      @include font(500, 14px, 1.64, 0em);
+      margin-bottom: 30px;
+      margin-top: 14px;
+    }
+    @media screen and (min-width: 1280px) {
+      @include font(500, 16px, 1.81, 0em);
+    }
+  }
+}
+
+.schedule {
+  &__weekdays {
+    margin-bottom: 10px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 16px;
+    }
+  }
+  &__weekends {
+    margin-bottom: 25px;
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 30px;
+    }
+  }
+  &__days {
+    @include font(500, 12px, 1.83, 0em);
+    color: var(--section-text-main-color);
+    @media screen and (min-width: 768px) {
+      @include font(500, 14px, 1.86, 0em);
+    }
+    @media screen and (min-width: 1280px) {
+      @include font(500, 16px, 1.88, 0.04em);
+    }
+  }
+  &__time {
+    @include font(500, 12px, 1.83, 0em);
+    color: var(--section-label-text-color);
+  }
+  @media screen and (min-width: 768px) {
+    @include font(500, 14px, 1.86, 0em);
+  }
+  @media screen and (min-width: 1280px) {
+    @include font(500, 16px, 1.88, 0.04em);
+  }
+}
+/*--------------BUTTONS-------------*/
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  width: 160px;
+  height: 44px;
+  // margin: 0 auto;
+  padding: 0;
+  border: none;
+  border-radius: 22px;
+  background-color: var(--header-button-background-color);
+  color: var(--header-button-text-color);
+
+  @include font($fs: 16px, $lh: 1.31, $ls: 0em);
+}
+.buttons-list {
+  @include flex();
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 0;
+    margin-right: -15px;
+  }
+
+  &__item {
+    @media screen and (max-width: 767px) {
+      &:first-child {
+        margin-bottom: 10px;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+      margin-right: 15px;
+    }
+
+    &--red {
+      width: 161px;
+      color: var(--section-button-dark-text-color);
+      background-color: var(--section-button-dark-background-color);
+
+      @media screen and (min-width: 768px) {
+        width: 192px;
+      }
+
+      @media screen and (min-width: 1280px) {
+        width: 198px;
+      }
+      &:active,
+      &:hover,
+      &:focus {
+        background-color: var(--section-button-dark-bg-hover-color);
+      }
+    }
+
+    &-arrow--white {
+      margin-left: 11px;
+
+      @media screen and (min-width: 768px) {
+        margin-left: 13px;
+      }
+    }
+
+    &--white {
+      width: 161px;
+      color: var(--header-button-text-color);
+      background-color: var(--section-light-background-color);
+
+      @media screen and (min-width: 768px) {
+        width: 174px;
+      }
+
+      @media screen and (min-width: 1280px) {
+        width: 180px;
+      }
+    }
+
+    &--white:hover,
+    &--white:focus {
+      background-color: var(--section-light-bg-hover-color);
+    }
+
+    &-arrow--red {
+      margin-left: 14px;
+
+      @media screen and (min-width: 1280px) {
+        margin-left: 16px;
+      }
+    }
+  }
 }
