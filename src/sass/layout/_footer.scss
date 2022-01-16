@@ -4,7 +4,6 @@
 }
 
 .footer__main {
-  border-bottom: 1px solid #e1e1e1;
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
@@ -131,7 +130,7 @@
 }
 
 .footer-contact__text {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 12px;
   line-height: 1.83;
   color: var(--section-text-main-color);
@@ -152,28 +151,29 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: 150px;
   margin: 0 auto;
-  @media screen and (min-width: 768px) {
-    flex-direction: column;
-    width: 276px;
-  }
+  border-top: 1px solid #e1e1e1;
 }
 
 .footer-сopyright__text {
   padding-top: 22px;
   padding-bottom: 25px;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.52;
   text-align: center;
   color: var(--section-text-second-color);
+  @media screen and (max-width: 767.5px) {
+    width: 150px;
+  }
   @media screen and (min-width: 768px) {
-    flex-wrap: nowrap;
-    width: 276px;
-    margin: 0 0;
+    width: 100%;
     padding-top: 29px;
     padding-bottom: 18px;
     line-height: 1.86;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 9px;
+    padding-bottom: 10px;
   }
 }
