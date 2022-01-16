@@ -1,8 +1,9 @@
 .section {
   margin: 0 auto;
-  background-color: var(--four-background-color);
+  background-color: var(--section-background-coloured-color);
 }
 .footer__main {
+  border-bottom: 1px solid #e1e1e1;
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
@@ -32,14 +33,19 @@
   font-size: 18px;
   line-height: 21px;
   text-transform: uppercase;
-  color: var(--two-text-color);
+  color: var(--fouter-first-head-text-color);
+  width: 232px;
+  flex-wrap: wrap;
   @media screen and (min-width: 768px) {
+    width: 340px;
     margin-bottom: 16px;
     font-size: 26px;
     line-height: 1.15;
     letter-spacing: 0.04em;
   }
   @media screen and (min-width: 1280px) {
+    flex-wrap: nowrap;
+    width: 477px;
     margin-bottom: 15px;
     font-size: 30px;
     line-height: 1.13;
@@ -52,15 +58,20 @@
   line-height: 39px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: var(--second-hero-color);
+  color: var(--footer-second-head-text-color);
+  width: 200px;
+  flex-wrap: wrap;
   @media screen and (min-width: 768px) {
+    width: 340px;
     font-size: 48px;
     line-height: 1.14;
     letter-spacing: 0.06em;
   }
   @media screen and (min-width: 1280px) {
+    flex-wrap: nowrap;
+    width: 477px;
     font-size: 58px;
-    line-height: 1.14;
+    line-height: 1.13;
     letter-spacing: 0.06em;
   }
 }
@@ -99,7 +110,7 @@
     border-radius: 50%;
     align-items: center;
     justify-content: center;
-    background-color: #fea5bb;
+    background-color: var(--social-icons-background-hover-color);
     &:hover,
     &:focus {
       background-color: var(--second-hero-color);
@@ -107,7 +118,7 @@
   }
   &__icon {
     fill: currentColor;
-    color: var(--hero-text-color);
+    color: var(--social-icons-fill-color);
   }
 }
 
@@ -123,7 +134,7 @@
     font-weight: bold;
     font-size: 12px;
     line-height: 186%;
-    color: var(--text-color);
+    color: var(--section-text-main-color);
     @media screen and (min-width: 768px) {
       font-size: 14px;
     }
@@ -132,13 +143,16 @@
     }
   }
   &__tel {
-    color: var(--second-hero-color);
+    color: var(--footer-phone-number-color);
   }
 }
 .footer-сopyright {
   display: flex;
   justify-content: center;
-  border-top: 1px solid #e1e1e1;
+  flex-wrap: wrap;
+  width: 150px;
+  margin: 0 auto;
+  // border-top: 1px solid #e1e1e1;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
@@ -146,7 +160,12 @@
   &__text {
     padding-top: 22px;
     padding-bottom: 25px;
+
     @media screen and (min-width: 768px) {
+      flex-wrap: nowrap;
+      width: 276px;
+      text-align: center;
+      margin: 0 0;
       padding-top: 29px;
       padding-bottom: 18px;
       line-height: 1.86;
@@ -158,6 +177,6 @@
     line-height: 1.52;
     text-align: center;
 
-    color: var(--three-text-color);
+    color: var(--section-text-second-color);
   }
 }
