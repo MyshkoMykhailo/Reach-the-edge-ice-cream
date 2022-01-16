@@ -8,7 +8,7 @@
     padding-bottom: 165px;
   }
 
-  &__container {
+  .contacts__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,16 +22,16 @@
       padding-left: 115px;
       padding-right: 115px;
       background-color: var(--section-background-coloured-color);
-      background-image: url('../images/pc/footer-picture.png');
+      background-image: url('../images/pc/contacts-bg.png');
       background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
+      background-position: top;
+      background-size: auto;
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background-image: url('../images/pc/footer-picture-2x.png');
+        background-image: url('../images/pc/contacts-bg@2x.png');
       }
     }
   }
-  &__list {
+  .contacts__list {
     margin-top: -84px;
     margin-bottom: 54px;
     @include flex();
@@ -46,7 +46,7 @@
       margin-top: -102px;
     }
   }
-  &__item {
+  .contacts__item {
     background-color: #fff;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
@@ -76,7 +76,7 @@
     padding: (51px 43px 62px 44px);
   }
 
-  &__name {
+  .category__name {
     margin-bottom: 25px;
     width: 80px;
     height: 16px;
@@ -97,7 +97,7 @@
       margin-bottom: 32px;
     }
   }
-  &__name-another {
+  .category__name-another {
     margin-bottom: 25px;
     width: 130px;
     height: 16px;
@@ -118,7 +118,7 @@
       margin-bottom: 32px;
     }
   }
-  &__link {
+  .category__link {
     @include font(500, 12px, 1.5, 0.04em);
     color: var(--section-text-second-color);
     @media screen and (min-width: 768px) {
@@ -131,7 +131,7 @@
 }
 
 .about-category {
-  &__item {
+  .about-category__item {
     display: flex;
     flex-direction: column;
 
@@ -152,7 +152,7 @@
       }
     }
   }
-  &__name {
+  .about-category__name {
     @include font(500, 12px, 1.83, 0.04em);
     color: var(--section-text-main-color);
     @media screen and (min-width: 768px) {
@@ -162,7 +162,7 @@
       @include font(500, 16px, 1.88, 0.04em);
     }
   }
-  &__text {
+  .about-category__text {
     @include font(500, 12px, 1.5, 0em);
     color: var(--section-text-second-color);
     margin-top: 10px;
@@ -174,6 +174,8 @@
     }
     @media screen and (min-width: 1280px) {
       @include font(500, 16px, 1.81, 0em);
+      margin-top: 10px;
+      margin-bottom: 32px;
     }
   }
 }
@@ -184,11 +186,17 @@
     @media screen and (min-width: 768px) {
       margin-bottom: 16px;
     }
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 15px;
+    }
   }
   &__weekends {
     margin-bottom: 25px;
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 768px) {
       margin-bottom: 30px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 32px;
     }
   }
   &__days {

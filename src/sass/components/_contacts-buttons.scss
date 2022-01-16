@@ -14,7 +14,7 @@
     margin-right: -15px;
   }
 
-  &__item {
+  .buttons-list__item {
     @media screen and (max-width: 767px) {
       &:first-child {
         margin-bottom: 10px;
