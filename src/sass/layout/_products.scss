@@ -43,7 +43,6 @@
     @include font(400, 58px, 1.14);
     margin-bottom: 49px;
   }
-  outline: 1px solid blue;
 }
 
 .products-list {
@@ -54,8 +53,6 @@
   @media screen and (max-width: 767.5px) {
     margin-bottom: -16px;
   }
-
-  outline: 1px solid skyblue;
 }
 
 .products-list__card {
@@ -68,7 +65,6 @@
   @media screen and (min-width: 1280) {
     flex-basis: calc((100% - (3 - 1) * 24px) / 3);
   }
-  outline: 1px dotted black;
 }
 
 .products-list__card-coloured {
@@ -121,8 +117,6 @@
     @include font(400, 30px, 1.13);
     margin-bottom: 32px;
   }
-
-  outline: 1px dashed green;
 }
 
 .product-list__name--first::before {
@@ -258,8 +252,6 @@
     @include font(700, 16px, 1.76);
     margin-bottom: 62px;
   }
-
-  outline: 1px dashed orange;
 }
 
 .product-list__text--dissapear {
@@ -269,16 +261,3 @@
   height: 1px;
   margin: -1px;
 }
-
-// .round-buttom {
-//   margin: 0 auto;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   width: 40px;
-//   height: 40px;
-//   border: none;
-//   border-radius: 50%;
-//   fill: var(--open-more-button-icon);
-//   cursor: pointer;
-// }
