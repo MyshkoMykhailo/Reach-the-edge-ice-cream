@@ -1,8 +1,7 @@
 .hero {
-  border: solid 1px green;
+  // border: solid 1px green;
   background-color: var(--hero-background-color);
   height: 446px;
-  // background-image: url(../images/mob/Ellipse-mob.png);
 }
 .hero-container {
   position: relative;
@@ -189,10 +188,25 @@
     }
   }
 }
-
+.hero__img-milk {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+.hero__bg-ice-cream {
+  position: absolute;
+  right: 10px;
+  top: -20px;
+  z-index: 0;
+}
 .hero-img {
   position: absolute;
   bottom: 0;
   right: 32px;
   z-index: 1;
+}
+.hero__img-baby {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
