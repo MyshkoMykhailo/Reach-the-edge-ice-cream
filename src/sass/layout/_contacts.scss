@@ -12,7 +12,7 @@
     background-position: top;
     background-size: contain;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background: url('../images/pc/footer-picture-2x.png');
+      background-image: url('../images/pc/footer-picture-2x.png');
     }
   }
 
