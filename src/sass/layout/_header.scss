@@ -17,8 +17,7 @@
   @media screen and (max-width: 767px), (min-width: 1280px) {
     justify-content: space-between;
   }
-
-  // align-items: center;
+  align-items: center;
 }
 
 .header__logo {
@@ -38,17 +37,24 @@
     display: none;
   }
 }
+.js-open-menu {
+  color: var(--header-text-hover-color);
+  margin-right: 10px;
+  margin-left: auto;
+}
 .js-close-menu {
   background-color: var(--header-menu-burger-color);
   position: absolute;
   top: 23px;
   right: 28px;
+  color: var(--header-menu-close-color);
 }
 .mobile-menu {
   border-top: 1px solid #e18298;
 }
 .mobile-menu__item {
   height: 42px;
+  padding-left: 21px;
   border-bottom: 1px solid #e18298;
   display: flex;
   align-items: center;
@@ -108,7 +114,7 @@
   z-index: 999;
   transform: translateX(200%);
   transition: transform 250ms ease-in-out;
-  padding: 48px 40px;
+  padding-top: 60px;
   display: flex;
   flex-direction: column;
   // justify-content: space-between;
@@ -132,7 +138,6 @@
 
   width: 160px;
   height: 44px;
-  // margin: 0 auto;
   padding: 0;
   border: none;
   border-radius: 22px;
@@ -155,15 +160,19 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
-  @media screen and (min-width: 768px) {
-    margin-left: 0;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    margin-right: 0;
+    margin-left: 30px;
   }
 }
 
 // Кнопка BuyNow для Бургера
 .header-burger__btn {
   width: 209px;
+  margin-left: 21px;
 
+  // color: var(--header-text-hover-color);
+  margin-bottom: 19px;
   @media screen and (min-width: 768px) {
     width: 186px;
   }
@@ -180,4 +189,7 @@
       margin-left: 20px;
     }
   }
+}
+.btn-svg {
+  fill: currentColor;
 }

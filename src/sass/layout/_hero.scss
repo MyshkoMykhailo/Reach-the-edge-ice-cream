@@ -2,6 +2,11 @@
   border: solid 1px green;
   background-color: var(--hero-background-color);
   height: 446px;
+  background-image: url(../images/mob/Ellipse-mob.png);
+}
+.hero-container {
+  position: relative;
+  height: 100%;
 }
 .hero__title {
   margin-top: 137px;
@@ -19,7 +24,74 @@
     width: 162px;
     @include font(400px, 22px, 1.14, 00.04em);
   }
+  position: absolute;
+  bottom: 0;
+  right: 32px;
+  z-index: 2;
 }
+
+//==============
+// Кнопки Products/How it’s made? на HERO
+.hero__buttons {
+  // Для зовнішніх відступів
+}
+
+.buttons-hero {
+  display: flex;
+  justify-content: center;
+  // margin-bottom: 0;
+  // margin-right: -15px;
+}
+
+.buttons-hero__item {
+  &:nth-child(1) {
+    margin-right: 8px;
+
+    @media screen and (min-width: 1280px) {
+      margin-right: 15px;
+    }
+  }
+
+  &--red {
+    width: 62px;
+    height: 24px;
+    @include font(400, 8px, 1.25, 0em);
+    color: var(--section-button-dark-text-color);
+    background-color: var(--section-button-dark-background-color);
+
+    @media screen and (min-width: 1280px) {
+      width: 104px;
+      height: 40px;
+      @include font(400, 14px, 1.29, 0em);
+    }
+  }
+
+  &--red:hover,
+  &--red:focus {
+    background-color: var(--section-button-dark-bg-hover-color);
+  }
+
+  &--white {
+    width: 83px;
+    height: 24px;
+    @include font(400, 8px, 1.25, 0em);
+    color: var(--header-button-text-color);
+    background-color: var(--header-button-background-color);
+
+    @media screen and (min-width: 1280px) {
+      width: 138px;
+      height: 40px;
+      @include font(400, 14px, 1.29, 0em);
+    }
+  }
+
+  &--white:hover,
+  &--white:focus {
+    background-color: var(--header-button-bg-hover-color);
+  }
+}
+
+//=======================
 .hero__title--secondary {
   font-size: 48px;
   line-height: 0.965;
@@ -116,4 +188,11 @@
       margin-left: 20px;
     }
   }
+}
+
+.hero-img {
+  position: absolute;
+  bottom: 0;
+  right: 32px;
+  z-index: 1;
 }

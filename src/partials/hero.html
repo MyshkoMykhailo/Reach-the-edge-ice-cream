@@ -1,13 +1,17 @@
 <section class="hero">
-  <div class="container">
+  <div class="container hero-container">
     <h2 class="hero__title">
       ice cream made with <span class="hero__title--secondary">passion</span>
     </h2>
-    <div class="thumb-btn">
-      <button class="hero__button-priority" type="button">Products</button>
-      <button class="hero__button-secondary" type="button">How it’s made?</button>
-    </div>
-    <picture class="picture">
+    <ul class="list herobuttons buttons-hero">
+      <li class="buttons-heroitem">
+        <button type="button" class="btn buttons-heroitem--red">Products</button>
+      </li>
+      <li class="buttons-heroitem">
+        <button type="button" class="btn buttons-hero__item--white">How it’s made?</button>
+      </li>
+    </ul>
+    <picture class="hero-img">
       <source
         srcset="./images/pc/heder-ice-cream.png 1x, ./images/pc/heder-ice-cream-2x.png 2x"
         media="(min-width: 1280px)"
