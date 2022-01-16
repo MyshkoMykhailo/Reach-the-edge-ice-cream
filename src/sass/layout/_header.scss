@@ -8,7 +8,16 @@
 }
 .thumb-header-menu {
   display: flex;
-  justify-content: space-between;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+.header-thumb {
+  display: flex;
+  @media screen and (max-width: 767px), (min-width: 1280px) {
+    justify-content: space-between;
+  }
+
   // align-items: center;
 }
 
@@ -93,11 +102,11 @@
   @media screen and (max-width: 768px) {
     width: 100vw;
   }
-  left: 0;
+  right: 0;
   width: 254px;
   height: 100vh;
   z-index: 999;
-  transform: translateX(100%);
+  transform: translateX(200%);
   transition: transform 250ms ease-in-out;
   padding: 48px 40px;
   display: flex;
@@ -145,6 +154,9 @@
   }
   @media screen and (max-width: 767px) {
     display: none;
+  }
+  @media screen and (min-width: 768px) {
+    margin-left: 0;
   }
 }
 
