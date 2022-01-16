@@ -42,23 +42,14 @@
 }
 .category {
   height: 427px;
-  padding-top: 43px;
-  padding-bottom: 43px;
-  padding-left: 20px;
-  padding-right: 21px;
+  padding: (43px 20px 43px 21px);
   margin-left: auto;
   margin-right: auto;
-
-  // &:not(:last-child) {
-  //   margin-bottom: 20px;
-  // }
 
   @media screen and (max-width: 767px) {
     &:not(:last-child) {
       margin-bottom: 20px;
     }
-    // margin-right: 50px;
-    // margin-left: 50px;
   }
   @media screen and (min-width: 768px) {
     margin: 0;
@@ -67,18 +58,12 @@
       margin-right: 20px;
     }
     height: 544px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 31px;
-    padding-right: 32px;
+    padding: (50px 31px 50px 32px);
   }
   @media screen and (min-width: 1280px) {
     width: 330px;
     height: 572px;
-    padding-top: 51px;
-    padding-bottom: 62px;
-    padding-left: 43px;
-    padding-right: 44px;
+    padding: (51px 43px 62px 44px);
   }
 
   &__name {
