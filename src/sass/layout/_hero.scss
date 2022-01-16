@@ -2,13 +2,18 @@
   // border: solid 1px green;
   background-color: var(--hero-background-color);
   height: 446px;
+  @media screen and (min-width: 768px) {
+    height: 312px;
+  }
+  @media screen and (min-width: 1280px) {
+    height: 578px;
+  }
 }
 .hero-container {
   position: relative;
   height: 100%;
 }
 .hero__title {
-  margin-top: 137px;
   width: 218px;
   display: block;
   color: var(--hero-text-color);
@@ -23,12 +28,23 @@
     width: 162px;
     @include font(400px, 22px, 1.14, 00.04em);
   }
+
   position: absolute;
-  bottom: 0;
-  right: 32px;
+  top: 137px;
+  left: 20px;
   z-index: 2;
 }
-
+.hero__title--secondary {
+  font-size: 48px;
+  line-height: 0.965;
+  color: var(--second-hero-color);
+  @media screen and (min-width: 768px) {
+    @include font(400px, 34px, 0.905, 00.04em);
+  }
+  @media screen and (min-width: 1280px) {
+    @include font(400px, 58px, 0.905, 00.04em);
+  }
+}
 //==============
 // Кнопки Products/How it’s made? на HERO
 .hero__buttons {
@@ -42,92 +58,42 @@
   // margin-right: -15px;
 }
 
-.buttons-hero__item {
-  &:nth-child(1) {
-    margin-right: 8px;
+.buttons-hero__item--red {
+  width: 62px;
+  height: 24px;
+  @include font(400, 8px, 1.25, 0em);
+  color: var(--section-button-dark-text-color);
+  background-color: var(--section-button-dark-background-color);
 
-    @media screen and (min-width: 1280px) {
-      margin-right: 15px;
-    }
+  @media screen and (min-width: 1280px) {
+    width: 104px;
+    height: 40px;
+    @include font(400, 14px, 1.29, 0em);
   }
-
-  &--red {
-    width: 62px;
-    height: 24px;
-    @include font(400, 8px, 1.25, 0em);
-    color: var(--section-button-dark-text-color);
-    background-color: var(--section-button-dark-background-color);
-
-    @media screen and (min-width: 1280px) {
-      width: 104px;
-      height: 40px;
-      @include font(400, 14px, 1.29, 0em);
-    }
-  }
-
-  &--red:hover,
-  &--red:focus {
+  &:hover,
+  &:focus {
     background-color: var(--section-button-dark-bg-hover-color);
   }
+}
 
-  &--white {
-    width: 83px;
-    height: 24px;
-    @include font(400, 8px, 1.25, 0em);
-    color: var(--header-button-text-color);
-    background-color: var(--header-button-background-color);
+.buttons-hero__item--white {
+  width: 83px;
+  height: 24px;
+  @include font(400, 8px, 1.25, 0em);
+  color: var(--header-button-text-color);
+  background-color: var(--header-button-background-color);
 
-    @media screen and (min-width: 1280px) {
-      width: 138px;
-      height: 40px;
-      @include font(400, 14px, 1.29, 0em);
-    }
+  @media screen and (min-width: 1280px) {
+    width: 138px;
+    height: 40px;
+    @include font(400, 14px, 1.29, 0em);
   }
-
-  &--white:hover,
-  &--white:focus {
+  &:hover,
+  &:focus {
     background-color: var(--header-button-bg-hover-color);
   }
 }
-
 //=======================
-.hero__title--secondary {
-  font-size: 48px;
-  line-height: 0.965;
-  color: var(--second-hero-color);
-  @media screen and (min-width: 768px) {
-    @include font(400px, 34px, 0.905, 00.04em);
-  }
-  @media screen and (min-width: 1280px) {
-    @include font(400px, 58px, 0.905, 00.04em);
-  }
-}
-.thumb-btn {
-  margin-top: 19px;
-}
-.hero__button-priority {
-  display: inline-block;
-  cursor: progress;
-  font-family: inherit;
-  align-items: center;
-  text-align: center;
-  background-color: var(--second-hero-color);
-  border-radius: 20px;
-  border: 0;
-  color: var(---hero-text-color);
-}
-
-.hero__button-secondary {
-  display: inline-block;
-  cursor: progress;
-  font-family: inherit;
-  align-items: center;
-  text-align: center;
-  background-color: var(--hero-text-color);
-  border-radius: 20px;
-  border: 0;
-  color: var(--second-hero-color);
-}
 .button-more {
   @media screen and (max-width: 767px) {
     display: none;
@@ -195,11 +161,11 @@
 }
 .hero__bg-ice-cream {
   position: absolute;
-  right: 10px;
+  right: -62px;
   top: -20px;
   z-index: 0;
 }
-.hero-img {
+.hero__img-ice-cream {
   position: absolute;
   bottom: 0;
   right: 32px;
