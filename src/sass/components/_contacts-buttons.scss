@@ -1,0 +1,78 @@
+// Кнопки Our_Location/Franchise
+// .contacts__buttons {
+// Для зовнішніх відступів
+// }
+
+.buttons-list {
+  margin-bottom: -10px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+    margin-right: -15px;
+  }
+}
+
+.buttons-list__item {
+  margin-bottom: 10px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
+
+  &--red {
+    width: 162px;
+    color: var(--section-button-dark-text-color);
+    background-color: var(--section-button-dark-background-color);
+
+    @media screen and (min-width: 768px) {
+      width: 192px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 198px;
+    }
+  }
+
+  &--red:hover,
+  &--red:focus {
+    background-color: var(--section-button-dark-bg-hover-color);
+  }
+
+  &-arrow--white {
+    margin-left: 11px;
+
+    @media screen and (min-width: 768px) {
+      margin-left: 13px;
+    }
+  }
+
+  &--white {
+    width: 162px;
+    color: var(--header-button-text-color);
+    background-color: var(--section-light-background-color);
+
+    @media screen and (min-width: 768px) {
+      width: 174px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 180px;
+    }
+  }
+
+  &--white:hover,
+  &--white:focus {
+    background-color: var(--section-light-bg-hover-color);
+  }
+
+  &-arrow--red {
+    margin-left: 14px;
+
+    @media screen and (min-width: 1280px) {
+      margin-left: 16px;
+    }
+  }
+}
