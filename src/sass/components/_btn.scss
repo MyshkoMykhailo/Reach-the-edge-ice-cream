@@ -1,0 +1,16 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  width: 160px;
+  height: 44px;
+  padding: 0;
+  border: none;
+  border-radius: 22px;
+  background-color: var(--header-button-background-color);
+  color: var(--header-button-text-color);
+
+  @include font($fs: 16px, $lh: 1.31, $ls: 0em);
+}
