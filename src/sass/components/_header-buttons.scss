@@ -1,0 +1,33 @@
+// Кнопка BuyNow для HEADER
+.header__btn {
+  &:hover,
+  &:focus {
+    background-color: var(--header-button-bg-hover-color);
+  }
+
+  &-arrow {
+    margin-left: 12px;
+  }
+}
+
+// Кнопка BuyNow для Бургера
+.header-burger__btn {
+  width: 209px;
+
+  @media screen and (min-width: 768px) {
+    width: 186px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: var(--header-button-bg-hover-color);
+  }
+
+  &-arrow {
+    margin-left: 27px;
+
+    @media screen and (min-width: 768px) {
+      margin-left: 20px;
+    }
+  }
+}
