@@ -8,6 +8,9 @@
   @media screen and (min-width: 1280px) {
     height: 578px;
   }
+  @media screen and (max-width: 767px) {
+    overflow-x: hidden;
+  }
 }
 .hero-container {
   position: relative;
@@ -54,6 +57,11 @@
 .buttons-hero {
   display: flex;
   justify-content: center;
+
+  position: absolute;
+  top: 262px;
+  left: 20px;
+  z-index: 2;
   // margin-bottom: 0;
   // margin-right: -15px;
 }
@@ -162,7 +170,7 @@
 .hero__bg-ice-cream {
   position: absolute;
   right: -62px;
-  top: -20px;
+  top: 26px;
   z-index: 0;
 }
 .hero__img-ice-cream {
