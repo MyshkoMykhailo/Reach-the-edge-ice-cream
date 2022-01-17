@@ -31,6 +31,7 @@
   margin-top: -84px;
   margin-bottom: 54px;
   @include flex();
+  justify-content: space-between;
   flex-direction: column;
   @media screen and (min-width: 768px) {
     flex-direction: row;
@@ -73,8 +74,7 @@
   color: var(--section-text-on-dark-bg-color);
   border-radius: 4px;
   @include flex;
-  justify-content: center;
-  text-align: center;
+
   @include font(500, 12px, 1.83, 0.04em);
   @media screen and (min-width: 768px) {
     width: 73px;
@@ -95,7 +95,7 @@
   color: var(--section-text-on-dark-bg-color);
   border-radius: 4px;
   @include flex;
-  justify-content: center;
+
   @include font(500, 12px, 1.83, 0.04em);
   @media screen and (min-width: 768px) {
     width: 138px;
