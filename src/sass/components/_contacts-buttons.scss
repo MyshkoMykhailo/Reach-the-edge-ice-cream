@@ -68,8 +68,9 @@
   @media screen and (min-width: 1280px) {
     width: 180px;
   }
-  &--white:hover,
-  &--white:focus {
+  &:active,
+  &:hover,
+  &:focus {
     background-color: var(--section-light-bg-hover-color);
   }
 }
