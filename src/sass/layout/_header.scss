@@ -130,28 +130,6 @@
 .menu-container.is-open {
   transform: translateX(0);
 }
-// .menu-container {
-// }
-// .mobile-menu__icon {
-// }
-
-.btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-
-  width: 160px;
-  height: 44px;
-  padding: 0;
-  border: none;
-  border-radius: 22px;
-  background-color: var(--header-button-background-color);
-  color: var(--header-button-text-color);
-
-  @include font($fs: 16px, $lh: 1.31, $ls: 0em);
-}
-
 // Кнопка BuyNow для HEADER
 .header__btn {
   &:hover,
