@@ -283,7 +283,6 @@
   right: 44px;
   top: 14px;
   z-index: 2;
-  padding-right: 10px;
   height: 34px;
   font-family: Titan One;
   @include font(400px, 28px, 1.14);
@@ -291,12 +290,20 @@
   text-transform: uppercase;
   color: var(--header-text-hover-color);
 }
-.time-eat__text--food-points {
-  padding-right: 10px;
+.time-eat__text--secondary {
+  top: 69px;
+}
+.time-eat__food-points {
+  position: absolute;
+  right: 44px;
+  top: 46px;
   font-family: DM Sans;
   @include font(400px, 8px, 1.25, 0);
   text-align: right;
   color: var(--header-text-color);
+}
+.time-eat__food-points--secondary {
+  top: 102px;
 }
 .img-point-first {
   position: absolute;
