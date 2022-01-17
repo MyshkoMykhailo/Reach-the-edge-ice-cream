@@ -4,7 +4,6 @@
   @media screen and (min-width: 768px) {
     padding-top: 37px;
   }
-  z-index: 1;
 }
 .thumb-header-menu {
   display: flex;
@@ -33,9 +32,14 @@
   border: 0;
   padding: 0;
   background-color: var(--hero-background-color);
+  @media screen and (min-width: 768px) {
+    background-color: var(--section-label-text-color);
+  }
   @media screen and (min-width: 1280px) {
     display: none;
   }
+
+  z-index: 2;
 }
 .js-open-menu {
   color: var(--header-text-hover-color);
@@ -77,6 +81,7 @@
   @media screen and (max-width: 1279px) {
     display: none;
   }
+  z-index: 2;
 }
 .navigation-list {
   display: flex;
