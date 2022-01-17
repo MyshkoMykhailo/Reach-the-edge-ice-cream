@@ -55,7 +55,6 @@
 }
 
 .products-list__card {
-  flex-basis: calc((100% - (1 - 1) * 30px) / 1);
   margin-bottom: 16px;
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
