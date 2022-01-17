@@ -1,3 +1,16 @@
-<section>
-  <p class="gallery">hello gallery</p>
+<section class="gallery">
+  <div class="container">
+    <picture>
+      <source
+        srcset="../src/images/pc/gallery.jpg 1x, ../src/images/pc/gallery-2x.jpg 2x"
+        media="(min-width: 1280px)"
+        type="image/jpg"
+      />
+      <img
+        srcset="../src/images/tab/gallery-tab.jpg 1x, ../src/images/tab/gallery-tab-2x.jpg 2x"
+        src="../src/images/tab/gallery-tab.jpg"
+        alt="gallery"
+      />
+    </picture>
+  </div>
 </section>
