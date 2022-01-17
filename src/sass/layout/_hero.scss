@@ -8,7 +8,7 @@
   @media screen and (min-width: 1280px) {
     height: 578px;
   }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.5px) {
     overflow-x: hidden;
   }
 }
@@ -124,7 +124,7 @@
   &-arrow {
     margin-left: 12px;
   }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.5px) {
     display: none;
   }
 }
@@ -151,7 +151,7 @@
   }
 }
 .hero__img-milk {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.5px) {
     display: none;
   }
   position: absolute;
@@ -194,7 +194,7 @@
   }
 }
 .hero__img-baby {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.5px) {
     display: none;
   }
   position: absolute;
@@ -212,7 +212,7 @@
 .button-more {
   width: 18px;
   height: 18px;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.5px) {
     display: none;
   }
   position: absolute;
@@ -230,7 +230,7 @@
 }
 .hero-text {
   color: var(--header-text-color);
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.5px) {
     display: none;
   }
   position: absolute;
@@ -251,7 +251,7 @@
 .time-eat {
   padding-top: 12px;
   margin-bottom: -13px;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.5px) {
     display: none;
   }
   @media screen and (min-width: 1280px) {
