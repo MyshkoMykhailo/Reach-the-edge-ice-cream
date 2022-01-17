@@ -15,7 +15,7 @@
   }
 }
 .buttons-list__item {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.5px) {
     &:first-child {
       margin-bottom: 10px;
     }
@@ -45,12 +45,14 @@
   &:focus {
     background-color: var(--section-button-dark-bg-hover-color);
   }
-  &-arrow--white {
-    margin-left: 11px;
+}
 
-    @media screen and (min-width: 768px) {
-      margin-left: 13px;
-    }
+.buttons-list__item-arrow--red,
+.buttons-list__item-arrow--white {
+  margin-left: 11px;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 13px;
   }
 }
 
@@ -66,16 +68,9 @@
   @media screen and (min-width: 1280px) {
     width: 180px;
   }
-  &--white:hover,
-  &--white:focus {
+  &:active,
+  &:hover,
+  &:focus {
     background-color: var(--section-light-bg-hover-color);
-  }
-
-  &-arrow--red {
-    margin-left: 14px;
-
-    @media screen and (min-width: 1280px) {
-      margin-left: 16px;
-    }
   }
 }
