@@ -1,3 +1,52 @@
-<section>
-  <p class="customer-reviews">hello customer-reviews</p>
-</section>
+<section class="customer-reviews-section ">
+  <div class="customer-reviews-container container">
+    <div class="customer-reviews-slider">
+      <div class="customer-reviews-photo">
+        <picture>
+          <source
+              srcset="
+              ./images/pc/customer-reviews.png 1x,
+              ./images/pc/customer-reviews-2x.png 2x"
+              media="(min-width: 1200px)"
+            />
+            <source 
+              srcset="
+              ./images/tab/customer-reviews-tab.png 1x,
+              ./images/tab/customer-reviews-tab-2x.png 2x"
+              media="(min-width: 768px)"
+            />
+            <img 
+              class="photo" 
+              srcset="./images/mob/customer-reviews-mob.png  1x,
+              ./images/mob/customer-reviews-mob-2x.png  2x"
+              src="./images/mob/customer-reviews-mob-2x.png"
+              alt="Emily"/>
+        </picture>
+      </div>
+      <div class="customer-reviews-wrap">
+          <h3 class="customer-reviews-wrap__text">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.</h3>
+          <p class="customer-reviews-wrap__subtext">Emily, Los Angeles</p>
+      </div>
+      <ul class="customer-reviews-list list">
+        <li class="customer-reviews-list__item">
+          <a href="" class="customer-reviews-list__link">
+              <svg class="customer-reviews-list__icon customer-reviews-list__icon-house" width="12" height="12">
+                  <use href="./images/icons.svg#icon-home"></use>
+              </svg>
+          </a>
+        </li>
+        <li class="customer-reviews-list__item">
+          <a href="" class="customer-reviews-list__link">
+              <svg class="customer-reviews-list__icon" width="12" height="12">
+                  <use href="./images/icons.svg#icon-ellipse"></use>
+              </svg>
+          </a>
+        </li>
+        <li class="customer-reviews-list__item">
+          <a href="" class="customer-reviews-list__link">
+              <svg class="customer-reviews-list__icon" width="12" height="12">
+                  <use href="./images/icons.svg#icon-ellipse"></use>
+              </svg>
+          </a>
+        </li>
+    </div>
