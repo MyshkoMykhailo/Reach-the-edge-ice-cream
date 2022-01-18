@@ -86,16 +86,12 @@
 .customer-reviews-wrap__text {
   min-width: 157px;
   position: relative;
-  // display: block;
-  // align-items: center;
-  z-index: 90;
+
+  // z-index: 90;
   @include font(500, 12px, 2.55, 0);
   text-align: center;
   @media screen and (min-width: 768px) {
-    // min-width: 620px;
     @include font($fw: 500, $fs: 14px, $lh: 2.16);
-    // margin-top: 66px;
-    // margin-bottom: 58px;
   }
   @media screen and (min-width: 1200px) {
     // width: 926px;
