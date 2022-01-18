@@ -20,20 +20,20 @@
   width: 218px;
   display: block;
   color: var(--hero-text-color);
-  @include font(400px, 26px, 1.15, 00.04em);
+  @include font(400, 26px, 1.15, 00.04em);
   font-family: Titan One;
   text-transform: uppercase;
   @media screen and (min-width: 768px) {
     width: 162px;
     top: 15px;
     left: 34px;
-    @include font(400px, 22px, 1.14, 00.04em);
+    @include font(400, 22px, 1.14, 00.04em);
   }
   @media screen and (min-width: 1280px) {
     width: 277px;
     top: 84px;
     left: 115px;
-    @include font(400px, 38px, 1.16, 00.04em);
+    @include font(400, 38px, 1.16, 00.04em);
   }
 
   position: absolute;
@@ -46,10 +46,10 @@
   line-height: 0.965;
   color: var(--second-hero-color);
   @media screen and (min-width: 768px) {
-    @include font(400px, 34px, 0.905, 00.04em);
+    @include font(400, 34px, 0.905, 00.04em);
   }
   @media screen and (min-width: 1280px) {
-    @include font(400px, 58px, 0.905, 00.04em);
+    @include font(400, 58px, 0.905, 00.04em);
   }
 }
 //==============
