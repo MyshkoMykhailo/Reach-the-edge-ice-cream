@@ -109,12 +109,13 @@
 
   position: fixed;
   top: 0;
-
-  @media screen and (max-width: 768px) {
-    width: 100vw;
+  width: 250px;
+  height: 100vh;
+  @media screen and (min-width: 768px) {
+    width: 254px;
   }
   right: 0;
-  width: 254px;
+
   height: 100vh;
   z-index: 999;
   transform: translateX(200%);
