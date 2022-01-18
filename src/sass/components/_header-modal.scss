@@ -1,209 +1,225 @@
+// .backdrop {
+//   width: 100vw;
+//   height: 100vh;
+//   background-color: rgba(0, 0, 0, 1);
+//   background-color: rgba(0, 0, 0, 0.418);
+//   position: fixed;
+//   top: 0;
+//   //   transition: opacity 1000ms, visibility 1000ms;
+//   // overflow-y: scroll;  - прокрутка модалки
+//}
+
+// .backdrop.is-hidden .modal {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   //   transform: scale(1.5) rotate(180deg) translate(1000px);
+//   transition: transform 1000ms;
+
+//   transform: rotate(180deg);
+// }
+
+// .modal {
+//   width: 528px;
+//   min-height: 581px;
+//   background-color: blue;
+//   max-width: 450px;
+//   @media screen and (min-width: 1200px) {
+//     max-width: 528px;
+
+//   padding: 40px;
+//   background-color: blanchedalmond;
+//   border-radius: 4px;
+//   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+//     0px 2px 1px rgba(0, 0, 0, 0.2);
+//   position: absolute;
+//   top: 10px;
+//   left: 0;
+//   top: 50%;
+//   left: 50%;
+//   //   transform: scale(1) rotate(0);
+//   transform: translate(-50%, -50%);
+//   //   transition: transform 1000ms;
+
+//   //   transform: translateX(0);
+//   transform: rotate(0);
+// }
+// .modal-form__title {
+//   margin-bottom: 12px;
+
+//   text-align: center;
+//   color: blanchedalmond;
+//}
+
+// .modal-close {
+//   width: 30px;
+//   height: 30px;
+//   background-color: blanchedalmond;
+//   border: 1px solid blanchedalmond;
+//   box-sizing: border-box;
+//   border-radius: 50%;
+//   position: absolute;
+//   top: 8px;
+//   right: 8px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   fill: blanchedalmond;
+//   outline: none;
+//   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+//     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   &:hover,
+//   &:focus {
+//     fill: blanchedalmond;
+//     border-color: blanchedalmond;
+//   }
+// }
+
+// .is-hidden {
+//   //   visibility: hidden;
+//   //   opacity: 0;
+//   //   pointer-events: none;
+// }
+
+// .form-field {
+//   &:not(:first-child) {
+//     display: flex;
+//     flex-direction: column;
+//     margin-top: 10px;
+//     position: relative;
+//   }
+// }
+// .form-fild__label {
+//   margin-bottom: 4px;
+//   font-size: 12px;
+//   line-height: 1.17;
+//   letter-spacing: 0.01em;
+//   color: blanchedalmond;
+// }
+// .input {
+//   position: relative;
+// }
+
+// .input__form {
+//   width: 100%;
+//   border: 1px solid rgba(33, 33, 33, 0.2);
+//   box-sizing: border-box;
+//   border-radius: 4px;
+//   padding: 11px 42px;
+//   outline: none;
+//   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   &:focus,
+//   &:hover {
+//     border: 1px solid blanchedalmond;
+//     box-sizing: border-box;
+//     border-radius: 4px;
+//   }
+// }
+// .textarea {
+//   height: 120px;
+//   padding: 12px 16px;
+//   resize: none;
+
+//   font-weight: normal;
+//   line-height: 1.17;
+//   letter-spacing: 0.01em;
+//   color: blanchedalmond;
+
+//   & [placeholder='Введите текст'] {
+//     font-weight: normal;
+//     font-size: 12px;
+//     line-height: 1.17;
+//     letter-spacing: 0.01em;
+//     color: rgba(117, 117, 117, 0.5);
+//   }
+// }
+
+// .input__item {
+//   margin: 0;
+//   position: absolute;
+//   top: 50%;
+//   left: 11px;
+//   color: blanchedalmond;
+//   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   transform: translateY(-50%);
+
+//   .input__form:focus + &,
+//   .input__form:hover + & {
+//     color: blanchedalmond;
+//   }
+// }
+// .input__icon {
+//   fill: currentColor;
+// }
+// .checkbox {
+//   display: flex;
+//   align-items: center;
+
+//   color: blanchedalmond;
+//   @media screen and (min-width: 1200px) {
+//     padding-left: 12px;
+//   }
+// }
+
+// .checkbox > .checkbox__input {
+//   border: none;
+//   -webkit-appearance: none;
+//   -moz-appearance: none;
+//   appearance: none;
+//   position: absolute;
+// }
+// .chekbox__item {
+//   background-origin: border-box;
+//   border: 2px solid blanchedalmond;
+//   border-radius: 2px;
+//   fill: blanchedalmond;
+//   background-color: blanchedalmond;
+//   margin-right: 7.6px;
+
+//   .checkbox__input:checked + & {
+//     border-color: blanchedalmond;
+//     background-color: blanchedalmond;
+//     background-origin: border-box;
+//   }
+// }
+// .chekbox-icon {
+//   @media screen and (min-width: 1200px) {
+//   }
+// }
+// .chekbox__link {
+//   @media screen and (min-width: 1200px) {
+//   }
+
+//   color: blanchedalmond;
+//   text-decoration-line: underline;
+//   border-color: blanchedalmond;
+//   outline: none;
+//   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+//     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   &:focus,
+//   &:hover {
+//     border: 2px solid blanchedalmond;
+//     border-radius: 4px;
+//     border-color: blanchedalmond;
+//   }
+// }
+
+// .form-button {
+//   background-color: blanchedalmond;
+//   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+//   border-radius: 4px;
+//   border: 0;
+//   padding: 10px 55px;
+//   margin: 30px auto 0;
+
+//   display: flex;
+//   align-items: center;
+//   text-align: center;
+//   color: blanchedalmond;
+// }
+
 .backdrop {
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.2);
-  // background-color: rgba(0, 0, 0, 0.418);
-  position: fixed;
-  top: 0;
-  transition: opacity 1000ms, visibility 1000ms;
-  // overflow-y: scroll;  - прокрутка модалки
-}
-
-.backdrop.is-hidden .modal {
-  transform: scale(1.5) rotate(180deg) translate(1000px);
-  transition: transform 1000ms;
-}
-
-.modal {
-  // width: 528px;
-  // min-height: 581px;
-  width: 100%;
-  max-width: 450px;
-  @media screen and (min-width: 1200px) {
-    max-width: 528px;
-  }
-  padding: 40px;
-  background-color: blanchedalmond;
-  border-radius: 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: scale(1) rotate(0);
-  transform: translate(-50%, -50%);
-  transition: transform 1000ms;
-}
-.modal-form__title {
-  margin-bottom: 12px;
-
-  text-align: center;
-  color: blanchedalmond;
-}
-
-.modal-close {
-  width: 30px;
-  height: 30px;
-  background-color: blanchedalmond;
-  border: 1px solid blanchedalmond;
-  box-sizing: border-box;
-  border-radius: 50%;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  fill: blanchedalmond;
-  outline: none;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    fill: blanchedalmond;
-    border-color: blanchedalmond;
-  }
-}
-
-.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-
-.form-field {
-  &:not(:first-child) {
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-    position: relative;
-  }
-}
-.form-fild__label {
-  margin-bottom: 4px;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  color: blanchedalmond;
-}
-.input {
-  position: relative;
-}
-
-.input__form {
-  width: 100%;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  box-sizing: border-box;
-  border-radius: 4px;
-  padding: 11px 42px;
-  outline: none;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:focus,
-  &:hover {
-    border: 1px solid blanchedalmond;
-    box-sizing: border-box;
-    border-radius: 4px;
-  }
-}
-.textarea {
-  height: 120px;
-  padding: 12px 16px;
-  resize: none;
-
-  font-weight: normal;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  color: blanchedalmond;
-
-  & [placeholder='Введите текст'] {
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
-  }
-}
-
-.input__item {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 11px;
-  color: blanchedalmond;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transform: translateY(-50%);
-
-  .input__form:focus + &,
-  .input__form:hover + & {
-    color: blanchedalmond;
-  }
-}
-.input__icon {
-  fill: currentColor;
-}
-.checkbox {
-  display: flex;
-  align-items: center;
-
-  color: blanchedalmond;
-  @media screen and (min-width: 1200px) {
-    padding-left: 12px;
-  }
-}
-
-.checkbox > .checkbox__input {
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  position: absolute;
-}
-.chekbox__item {
-  background-origin: border-box;
-  border: 2px solid blanchedalmond;
-  border-radius: 2px;
-  fill: blanchedalmond;
-  background-color: blanchedalmond;
-  margin-right: 7.6px;
-
-  .checkbox__input:checked + & {
-    border-color: blanchedalmond;
-    background-color: blanchedalmond;
-    background-origin: border-box;
-  }
-}
-.chekbox-icon {
-  @media screen and (min-width: 1200px) {
-  }
-}
-.chekbox__link {
-  @media screen and (min-width: 1200px) {
-  }
-
-  color: blanchedalmond;
-  text-decoration-line: underline;
-  border-color: blanchedalmond;
-  outline: none;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:focus,
-  &:hover {
-    border: 2px solid blanchedalmond;
-    border-radius: 4px;
-    border-color: blanchedalmond;
-  }
-}
-
-.form-button {
-  background-color: blanchedalmond;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: 0;
-  padding: 10px 55px;
-  margin: 30px auto 0;
-
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: blanchedalmond;
+  background-color: teal;
 }
