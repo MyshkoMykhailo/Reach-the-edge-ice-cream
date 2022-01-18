@@ -1,3 +1,132 @@
 .header {
-  color: violet;
+  background-color: var(--hero-background-color);
+  padding-top: 6px;
+  @media screen and (min-width: 768px) {
+    padding-top: 37px;
+  }
+}
+.thumb-header-menu {
+  display: flex;
+  @media screen and (max-width: 767.5px) {
+    display: none;
+  }
+}
+.header-thumb {
+  display: flex;
+  @media screen and (max-width: 767.5px), (min-width: 1280px) {
+    justify-content: space-between;
+  }
+  align-items: center;
+}
+
+.header__logo {
+  display: flex;
+}
+
+.mobile-menu__icon {
+  fill: currentColor;
+}
+
+.menu-toggle {
+  // color: black;
+  border: 0;
+  padding: 0;
+  background-color: var(--hero-background-color);
+  @media screen and (min-width: 768px) {
+    background-color: var(--section-label-text-color);
+  }
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+
+  z-index: 2;
+}
+.js-open-menu {
+  color: var(--header-text-hover-color);
+  margin-right: 10px;
+  margin-left: auto;
+}
+.js-close-menu {
+  background-color: var(--header-menu-burger-color);
+  position: absolute;
+  top: 23px;
+  right: 28px;
+  color: var(--header-menu-close-color);
+}
+.mobile-menu {
+  border-top: 1px solid #e18298;
+}
+.mobile-menu__item {
+  height: 42px;
+  padding-left: 21px;
+  border-bottom: 1px solid #e18298;
+  display: flex;
+  align-items: center;
+}
+.mobile-menu__link {
+  margin-top: 0;
+  margin-bottom: 0;
+  @include font(700px, 14px, 1.285, 0);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--hero-text-color);
+
+  &--aktive {
+    color: var(--second-hero-color);
+  }
+}
+
+.navigation {
+  @media screen and (max-width: 1279px) {
+    display: none;
+  }
+  z-index: 2;
+}
+.navigation-list {
+  display: flex;
+  margin-right: -35px;
+}
+.navigation__item {
+  margin-right: 35px;
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+
+  color: var(--hero-text-color);
+}
+.navigation__link {
+  @include font(700px, 16px, 1.31);
+  &--aktive {
+    color: var(--second-hero-color);
+  }
+}
+
+.menu-container {
+  background-color: var(--header-menu-burger-color);
+  filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
+
+  position: fixed;
+  top: 0;
+
+  @media screen and (max-width: 768px) {
+    width: 100vw;
+  }
+  right: 0;
+  width: 254px;
+  height: 100vh;
+  z-index: 999;
+  transform: translateX(200%);
+  transition: transform 250ms ease-in-out;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  // justify-content: space-between;
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+.menu-container.is-open {
+  transform: translateX(0);
 }
