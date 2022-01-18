@@ -148,17 +148,33 @@
     margin-bottom: 15px;
   }
 }
-.customer-reviews-list {
-  display: flex;
-  margin: 0 auto;
-  width: 72px;
-  flex-direction: row;
-  justify-content: space-between;
+.slick-active {
+  background-image: url(../images/home1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  display: block;
+  opacity: 1;
 }
 
-.customer-reviews-list__icon {
-  fill: var(--slider-dots-main);
+.slick-dots li button {
+  
+  background-image: url(../images/ellipse7.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  display: block;
+  opacity: 1;
 }
-.customer-reviews-list__icon-house {
-  fill: var(--slider-active);
+
+.slick-dots li button:before {
+  content: '';
+  background-image: url(../images/home1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  opacity: 0;
 }
