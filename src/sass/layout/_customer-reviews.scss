@@ -87,17 +87,14 @@
   min-width: 157px;
   position: relative;
 
-  // z-index: 90;
+  z-index: 90;
   @include font(500, 12px, 2.55, 0);
   text-align: center;
   @media screen and (min-width: 768px) {
     @include font($fw: 500, $fs: 14px, $lh: 2.16);
   }
   @media screen and (min-width: 1200px) {
-    // width: 926px;
     @include font($fw: 500, $fs: 16px, $lh: 1.86);
-    // margin-top: 47px;
-    // margin-bottom: 47px;
   }
 }
 .customer-reviews-wrap__gradient::before {
