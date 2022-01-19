@@ -172,6 +172,7 @@ body.about-modal-open {
   position: fixed;
   top: 0;
   z-index: 10000;
+  overflow-y: scroll;
   transition: visibility 500ms, opacity 500ms;
   &.is-hidden .about-modal {
     transform: translate(-50%, -200%);
@@ -196,6 +197,10 @@ body.about-modal-open {
   }
   @media screen and (min-width: 1280px) {
     padding: 30px 40px;
+  }
+  @media screen and (max-height: 700px) {
+    transform: translate(-50%, 0);
+    top: 10px;
   }
   transition: transform 500ms;
 }
