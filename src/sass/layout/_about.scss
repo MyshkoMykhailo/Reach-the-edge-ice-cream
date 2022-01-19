@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   padding-top: 125px;
   padding-bottom: 40px;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.5px) {
     background-image: url(../images/mob/about-milk-mob.png);
     background-position: center bottom 100px;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -69,7 +69,7 @@
 }
 
 .about__picture {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.5px) {
     margin-bottom: 45px;
   }
 }
@@ -128,7 +128,7 @@
 }
 
 .about__button {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.5px) {
     @include font(700, 14px, 1.28, 0);
   }
   width: 176px;
