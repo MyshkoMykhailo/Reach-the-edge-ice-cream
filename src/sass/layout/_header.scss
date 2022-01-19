@@ -71,14 +71,14 @@
   font-size: 14px;
   line-height: 18px;
   color: var(--hero-text-color);
-
+  @include transition();
   &--aktive {
     color: var(--second-hero-color);
   }
 }
 
 .navigation {
-  @media screen and (max-width: 1279px) {
+  @media screen and (max-width: 1279.5px) {
     display: none;
   }
   z-index: 2;
@@ -97,6 +97,7 @@
   color: var(--hero-text-color);
 }
 .navigation__link {
+  @include transition();
   @include font(700px, 16px, 1.31);
   &--aktive {
     color: var(--second-hero-color);

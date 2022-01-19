@@ -13,4 +13,5 @@
   color: var(--header-button-text-color);
 
   @include font($fs: 16px, $lh: 1.31, $ls: 0em);
+  @include transition();
 }
