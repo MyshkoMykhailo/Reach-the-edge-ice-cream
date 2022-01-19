@@ -1,15 +1,15 @@
 (() => {
         const refs = {
-          openModalBtn: document.querySelector('[data-modal-open]'),
-          closeModalBtn: document.querySelector('[data-modal-close]'),
-          modal: document.querySelector('[data-modal]'),
+          openAboutModalBtn: document.querySelector('[about-modal-open]'),
+          closeAboutModalBtn: document.querySelector('[about-modal-close]'),
+          modalAbout: document.querySelector('[about-modal]'),
         };
 
-        refs.openModalBtn.addEventListener('click', toggleModal);
-        refs.closeModalBtn.addEventListener('click', toggleModal);
+        refs.openAboutModalBtn.addEventListener('click', toggleModal);
+        refs.closeAboutModalBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {
           document.body.classList.toggle('about-modal-open');
-          refs.modal.classList.toggle('is-hidden');
+          refs.modalAbout.classList.toggle('is-hidden');
         }
       })();

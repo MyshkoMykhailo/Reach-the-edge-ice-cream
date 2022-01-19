@@ -172,7 +172,7 @@ body.about-modal-open {
   position: fixed;
   top: 0;
   z-index: 10000;
-  overflow-y: scroll;
+  // overflow-y: scroll;
   transition: visibility 500ms, opacity 500ms;
   &.is-hidden .about-modal {
     transform: translate(-50%, -200%);
@@ -181,12 +181,12 @@ body.about-modal-open {
 }
 
 .about-modal {
-  overflow: auto;
+  // overflow: auto;
   padding: 30px 20px;
   position: absolute;
   min-width: 300px;
   max-width: 700px;
-  max-height: 700px;
+  max-height: 75vh;
   border-radius: 20px;
   top: 50%;
   left: 50%;
@@ -199,8 +199,9 @@ body.about-modal-open {
     padding: 30px 40px;
   }
   @media screen and (max-height: 700px) {
-    transform: translate(-50%, 0);
-    top: 10px;
+    // transform: translate(-50%, 0);
+    // top: 10px;
+    max-height: 500px;
   }
   transition: transform 500ms;
 }
@@ -213,10 +214,16 @@ body.about-modal-open {
 
 .about-modal__title {
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .about-modal__text-wrap {
+  max-height: 50vh;
   margin-bottom: 20px;
+  overflow: auto;
+  // @media screen and (max-height: 700px) {
+  //   max-height: 300px;
+  // }
 }
 
 .about-modal__text {
