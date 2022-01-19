@@ -355,3 +355,84 @@
 //   height: 20px;
 //   opacity: 1;
 // }
+.modal {
+  /* Скрываем окна  */
+  opacity: 0;
+  visibility: hidden;
+
+  width: 100%;
+  max-width: 280px;
+  max-height: 350px;
+  overflow-y: scroll;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 110; /* Должен быть выше чем у подложки*/
+
+  box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
+  text-align: initial;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: var(--first-product-background-color);
+  transition: 0.3s all;
+}
+.product__title {
+  font-family: "Titan One", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1.86;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  color: var(--section-head-text-color);
+}
+.product__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.52;
+  letter-spacing: 0.04em;
+  color: var(--section-text-on-dark-bg-color);
+  margin-bottom: 30px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Стили для активных классов подложки и окна */
+
+.active
+{
+  opacity: 1;
+  visibility: visible;
+}
+
+
+.js-modal-close {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--section-background-coloured-color);
+  cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--section-label-text-color);
+  }
+  
+}
+
+.js-modal-close:hover,
+.js-modal-close:focus {
+  color: var(--second-product-background-colorr);
+}
