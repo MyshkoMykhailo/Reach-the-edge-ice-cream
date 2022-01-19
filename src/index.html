@@ -53,36 +53,13 @@
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 3000,
         arrows: false,
         dots: true,
       });
     </script>
-    <!-- <script>
-      $(document).ready(function () {
-        var windowWidth = $(window).width();
-        if (windowWidth < 768)
-          $('#slider-products').addClass(
-            'slider-products-container slick-initialized slick-slider slick-dotted',
-          );
-        else
-          $('#slider-products').removeClass(
-            'slider-products-container slick-initialized slick-slider slick-dotted',
-          );
-        $(window).resize(function () {
-          var windowWidth = $(window).width();
-          if (windowWidth < 768)
-            $('#slider-products').addClass(
-              'slider-products-container slick-initialized slick-slider slick-dotted',
-            );
-          else
-            $('#slider-products').removeClass(
-              'slider-products-container slick-initialized slick-slider slick-dotted',
-            );
-        });
-      });
-    </script> -->
+
     <script>
       $('.slider-products-container').slick({
         infinite: true,
