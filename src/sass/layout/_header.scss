@@ -71,8 +71,12 @@
   font-size: 14px;
   line-height: 18px;
   color: var(--hero-text-color);
-  @include transition();
+  @include transition(color);
   &--aktive {
+    color: var(--second-hero-color);
+  }
+  &:hover,
+  &:focus {
     color: var(--second-hero-color);
   }
 }
@@ -97,10 +101,15 @@
   color: var(--hero-text-color);
 }
 .navigation__link {
-  @include transition();
+  @include transition(color);
   @include font(700px, 16px, 1.31);
   &--aktive {
     color: var(--second-hero-color);
+  }
+  &:hover,
+  &:focus {
+    color: var(--second-hero-color);
+    @include transition(color);
   }
 }
 
