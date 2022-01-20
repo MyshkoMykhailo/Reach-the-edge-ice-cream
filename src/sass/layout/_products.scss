@@ -55,6 +55,7 @@
 }
 
 .products-list__card {
+  position: relative;
   margin-bottom: 16px;
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
@@ -358,14 +359,14 @@
 .modal {
   
   width: 100%;
-  max-width: 280px;
-  max-height: 400px;
+  // max-width: 280px;
+  max-height: 350px;
   overflow-y: scroll;
   pointer-events: unset;
-  position: relative;
+  position: absolute;
   bottom: 0;
   left: 50%;
-  transform: translate(-50%, -110%);
+  transform: translate(-50%, -20%);
   z-index: 110; /* Должен быть выше чем у подложки*/
 
   box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
@@ -374,12 +375,13 @@
   border-radius: 10px;
   background-color: var(--first-product-background-color);
   transition: 0.3s all;
-  @media screen and (min-width: 768px) {
-    max-width: 350px;
+  // @media screen and (min-width: 768px) {
+  //   transform: translate(-50%, -20%);
     
-  }
-  @media screen and (min-width: 768px) {
-    max-height: 450px;
+  // }
+  
+  @media screen and (min-width: 1280px) {
+    transform: translate(-50%, -30%);
     
   }
 }
@@ -421,6 +423,10 @@
   margin-bottom: 30px;
   padding-right: 15px;
   padding-left: 15px;
+  @media screen and (min-width: 1280px) {
+    font-size: 18px;
+    
+  }
 }
 
 
