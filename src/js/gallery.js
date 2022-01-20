@@ -1,21 +1,14 @@
-// jQuery(document).ready(function($) {
-//     $('.gallery__list').masonry({
-//       itemSelector: '.gallery__item',
-//       columnWidth: '.gallery__item',
-//       originLeft: false,
-//       gutter: 10,
-//       fitWidth: true,
-      
-//     });
 
-// });
-
-var elem = document.querySelector('.gallery__list');
-var msnry = new Masonry( elem, {
+import Masonry from 'masonry-layout';
+var msnry = new Masonry('.gallery__list', {
    itemSelector: '.gallery__item',
-      columnWidth: '.gallery__item',
-      originLeft: false,
-      gutter: 10,
-      fitWidth: true
+   columnWidth: '.gallery__item',
+   originLeft: false,
+   gutter: 10,
+   fitWidth: true
 });
+   $gallery__list.imagesLoaded().progress( function() {
+  $gallery__list.masonry('layout');
+});
+
 
