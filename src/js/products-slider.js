@@ -9,7 +9,7 @@ $('.slider-products-container').slick({
         mobileFirst: true,
         responsive: [
           {
-            breakpoint: 768,
+            breakpoint: 767.5,
             settings: 'unslick',
           },
         ],
