@@ -1,17 +1,17 @@
 .contacts {
-  padding-bottom: 113px;
-  background-color: var(--section-background-coloured-color);
+  padding-bottom: 113px;  
+  background-image: linear-gradient(180deg, rgba(255,255,255,1) 5%, rgba(255,245,246,1) 5%);
   @media screen and (min-width: 768px) {
+    background-image: linear-gradient(180deg, rgba(255,255,255,1) 9%, rgba(255,245,246,1) 9%);
     padding-bottom: 165px;
   }
-  @media screen and (min-width: 1280px) {
-    background-color: var(--section-background-coloured-color);
-    background-image: url('../images/pc/contacts-bg.png');
+  @media screen and (min-width: 1280px) { 
+    background-image: url('../images/pc/contacts-bg.png'), linear-gradient(180deg, rgba(255,255,255,1) 12%, rgba(255,245,246,1) 12%);
     background-repeat: no-repeat;
-    background-position: top;
-    background-size: 1920px 382px;
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url('../images/pc/contacts-bg@2x.png');
+    background-position: center;
+    background-size: 1920px;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {       
+      background-image: url('../images/pc/contacts-bg@2x.png'), linear-gradient(180deg, rgba(255,255,255,1) 12%, rgba(255,245,246,1) 12%);
     }
   }
 }
@@ -28,19 +28,17 @@
 }
 
 .contacts__list {
-  margin-top: -84px;
+
   margin-bottom: 54px;
   @include flex();
   justify-content: space-between;
   flex-direction: column;
   @media screen and (min-width: 768px) {
-    flex-direction: row;
-    margin-top: -78px;
+    flex-direction: row;    
     margin-bottom: 81px;
   }
   @media screen and (min-width: 1280px) {
-    margin-bottom: 86px;
-    margin-top: -102px;
+    margin-bottom: 86px;  
   }
 }
 .contacts__item {
