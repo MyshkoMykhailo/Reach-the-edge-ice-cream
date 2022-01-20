@@ -1,14 +1,14 @@
 .customer-reviews-section {
   max-width: 100%;
   padding-top: 80px;
-  padding-bottom: 170px;
+  padding-bottom: 86px;
   @media screen and (min-width: 768px) {
     padding-top: 121px;
-    padding-bottom: 197px;
+    padding-bottom: 119px;
   }
   @media screen and (min-width: 1200px) {
     padding-top: 123px;
-    padding-bottom: 234px;
+    padding-bottom: 132px;
   }
 }
 .customer-reviews-container {
@@ -33,7 +33,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
 }
 .customer-reviews-photo {
   display: flex;
@@ -158,18 +157,18 @@
     margin-bottom: 15px;
   }
 }
-.slick-active {
-  background-image: url(../images/home1.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 20px;
-  height: 20px;
-  display: block;
-  opacity: 1;
-}
+// .slick-active {
+//   background-image: url(../images/home1.png);
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   width: 20px;
+//   height: 20px;
+//   display: block;
+//   opacity: 1;
+// }
 
-.slick-dots li button {
-  
+.customer-reviews-section .slick-dots button {
+  position: relative;
   background-image: url(../images/ellipse7.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -179,12 +178,21 @@
   opacity: 1;
 }
 
-.slick-dots li button:before {
+.customer-reviews-section .slick-dots li.slick-active button {
+  background-image: none;
+}
+
+.customer-reviews-section .slick-dots li button:before {
   content: '';
+}
+
+.customer-reviews-section .slick-dots li.slick-active button:before {
+  content: '';
+  position: absolute;
   background-image: url(../images/home1.png);
   background-position: center;
   background-repeat: no-repeat;
   width: 20px;
   height: 20px;
-  opacity: 0;
+  opacity: 1;
 }

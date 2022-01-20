@@ -110,6 +110,11 @@
   align-items: center;
   justify-content: center;
   background-color: var(--social-icons-background-hover-color);
+  @include transition(
+    $tr-property: background-color,
+    $trt: 250ms,
+    $tr-tim-funct: var(--transition-timing)
+  );
   &:hover,
   &:focus {
     background-color: var(--second-hero-color);
