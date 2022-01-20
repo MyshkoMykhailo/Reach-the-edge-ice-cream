@@ -45,13 +45,27 @@
   color: var(--header-text-hover-color);
   margin-right: 10px;
   margin-left: auto;
+  cursor: pointer;
+
+  @include transition(color);
+  &:hover,
+  &:focus {
+    color: var(--section-button-dark-bg-hover-color);
+  }
 }
 .js-close-menu {
   background-color: var(--header-menu-burger-color);
   position: absolute;
+  cursor: pointer;
   top: 23px;
   right: 28px;
   color: var(--header-menu-close-color);
+
+  @include transition(color);
+  &:hover,
+  &:focus {
+    color: var(--second-hero-color);
+  }
 }
 .mobile-menu {
   border-top: 1px solid #e18298;
@@ -71,8 +85,12 @@
   font-size: 14px;
   line-height: 18px;
   color: var(--hero-text-color);
-  @include transition();
+  @include transition(color);
   &--aktive {
+    color: var(--second-hero-color);
+  }
+  &:hover,
+  &:focus {
     color: var(--second-hero-color);
   }
 }
@@ -97,10 +115,15 @@
   color: var(--hero-text-color);
 }
 .navigation__link {
-  @include transition();
+  @include transition(color);
   @include font(700px, 16px, 1.31);
   &--aktive {
     color: var(--second-hero-color);
+  }
+  &:hover,
+  &:focus {
+    color: var(--second-hero-color);
+    @include transition(color);
   }
 }
 
