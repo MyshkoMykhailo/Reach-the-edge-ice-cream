@@ -45,13 +45,27 @@
   color: var(--header-text-hover-color);
   margin-right: 10px;
   margin-left: auto;
+  cursor: pointer;
+
+  @include transition(color);
+  &:hover,
+  &:focus {
+    color: var(--section-button-dark-bg-hover-color);
+  }
 }
 .js-close-menu {
   background-color: var(--header-menu-burger-color);
   position: absolute;
+  cursor: pointer;
   top: 23px;
   right: 28px;
   color: var(--header-menu-close-color);
+
+  @include transition(color);
+  &:hover,
+  &:focus {
+    color: var(--second-hero-color);
+  }
 }
 .mobile-menu {
   border-top: 1px solid #e18298;
