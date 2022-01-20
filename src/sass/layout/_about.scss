@@ -160,16 +160,14 @@ body.about-modal-open {
   position: fixed;
   top: 0;
   z-index: 10000;
-  // overflow-y: scroll;
   transition: visibility 500ms, opacity 500ms;
-  &.is-hidden .about-modal {
+  &.about-is-hidden .about-modal {
     transform: translate(-50%, -200%);
     transition: transform 500ms;
   }
 }
 
 .about-modal {
-  // overflow: auto;
   padding: 30px 20px;
   position: absolute;
   min-width: 300px;
@@ -187,14 +185,12 @@ body.about-modal-open {
     padding: 30px 40px;
   }
   @media screen and (max-height: 700px) {
-    // transform: translate(-50%, 0);
-    // top: 10px;
     max-height: 500px;
   }
   transition: transform 500ms;
 }
 
-.is-hidden {
+.about-is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
@@ -209,9 +205,6 @@ body.about-modal-open {
   max-height: 50vh;
   margin-bottom: 20px;
   overflow: auto;
-  // @media screen and (max-height: 700px) {
-  //   max-height: 300px;
-  // }
 }
 
 .about-modal__text {
@@ -225,4 +218,8 @@ body.about-modal-open {
   margin: 0 auto;
   background-color: var(--section-button-dark-background-color);
   color: var(--section-button-dark-text-color);
+  &:hover,
+  &:focus {
+    background-color: var(--section-button-dark-bg-hover-color);
+  }
 }
